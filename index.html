@@ -2,12 +2,17 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>Абоба</title>
+		<title>Дискография Радмилы Павловой</title>
 	</head>
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 		body{
 			background: #121212;
+		}
+		td {
+			color: white;
+			font-family: 'Arial';
+			font-weight: bold;
 		}
 		select {
 			background: #181818;
@@ -18,93 +23,184 @@
 			font-size: 25px;
 			border: 3px solid white;
 			padding: 5px;
-			margin: 13px 13px 0 13px;
+			margin: 0;
+			height: 45px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
 		}
-	   .thumb {
-		   margin-top: 0px;
-	   }
-	   h2 {
-		   margin-top: 10px;
-		   margin-bottom: 5px;
-		   text-align: center;
-		   font-family: 'PT Sans';
-		   font-weight: bold;
-		   color: white;
-	   }
-	   .sign {
+		button {
+			background: #181818;
+			color: #ffffff;
+			text-align: center;
+			font-family: 'PT Sans';
+			font-weight: bold;
+			font-size: 25px;
+			border: 3px solid white;
+			padding: 5px;
+			margin: 0;
+			height: 45px;
+		}
+		.thumb {
+			margin-top: 10px;
+		}
+		h2 {
+			position: absolute;
+			text-align: right;
+			right: 10px;
+			font-family: 'PT Sans';
+			color: white;
+			top: 18px;
+			margin: 0;
+		}
+		li {
+			list-style-type: none;
+		}
+		.sign {
 			border-radius: 5px;
 			float: left;
 			padding: 16px;
-			margin: 0 5px 10px 5px;
+			margin: 5px;
 			background: #181818;
 			height: 240px;
-			width: 173px;
-	   }
-	   .sign:hover {
+			width: 172px;
+		}
+		.sign:hover {
 			background: #282828;
 			cursor:pointer
-	   }
-	   .sign img {
+		}
+		.sign img {
 			width: 170px;
 			box-shadow:0 0 3px #000;
-	   }
-	   .sign figcaption {
+		}
+		.sign figcaption {
 			margin: 15px 0 0 0;
 			color: white;
 			font-family: 'Arial';
 			font-weight: bold;
 			font-size: 15px;
-	   }
-	   A {
+		}
+		.figa {
+			color: white;
+			font-family: 'Arial';
+			font-size: 11px;
+			margin-top: 5px;
+		}
+		A {
 			text-decoration: none;
-	   }
+		}
+		ul{
+		  column-count: 3;
+		  padding: 0;
+		  margin: 10px 10px 10px 10px;
+		}
 	</style>
 	<script>
 		function changePage(select) {
 			var i = select.options[select.selectedIndex];
 			if (i.value == "Альбомы") {
+				document.getElementById('chart').style.display = "none"
 				document.getElementById('albums').style.display = "block"
 				document.getElementById('ep').style.display = "none"
 				document.getElementById('singles').style.display = "none"
+				document.getElementById('part').style.display = "none"
 			}
 			else if (i.value == "EP") {
+				document.getElementById('chart').style.display = "none"
 				document.getElementById('albums').style.display = "none"
 				document.getElementById('ep').style.display = "block"
 				document.getElementById('singles').style.display = "none"
+				document.getElementById('part').style.display = "none"
 			}
 			else if (i.value == "Синглы") {
+				document.getElementById('chart').style.display = "none"
 				document.getElementById('albums').style.display = "none"
 				document.getElementById('ep').style.display = "none"
 				document.getElementById('singles').style.display = "block"
+				document.getElementById('part').style.display = "none"
 			}
-			else {
+			else if (i.value == "Участие в альбомах") {
+				document.getElementById('chart').style.display = "none"
 				document.getElementById('albums').style.display = "none"
 				document.getElementById('ep').style.display = "none"
 				document.getElementById('singles').style.display = "none"
+				document.getElementById('part').style.display = "block"
+			}
+			else if (i.value == "Популярные треки") {
+				document.getElementById('chart').style.display = "block"
+				document.getElementById('albums').style.display = "none"
+				document.getElementById('ep').style.display = "none"
+				document.getElementById('singles').style.display = "none"
+				document.getElementById('part').style.display = "none"
+			}
+			else {
+				document.getElementById('chart').style.display = "none"
+				document.getElementById('albums').style.display = "none"
+				document.getElementById('ep').style.display = "none"
+				document.getElementById('singles').style.display = "none"
+				document.getElementById('part').style.display = "none"
 			}
 		}
 	</script>
 	<body>
-		<select id="formm" onchange="changePage(this)">
-		  <option>Популярные треки</option>
-		  <option selected="selected">Альбомы</option>
-		  <option>EP</option>
-		  <option>Синглы</option>
-		  <option>Участие в альбомах</option>
-		</select>
+		<div class="memnu">
+			<button>◀</button>
+			<select id="formm" onchange="changePage(this)">
+				  <option selected="selected">Популярные треки</option>
+				  <option>Альбомы</option>
+				  <option>EP</option>
+				  <option>Синглы</option>
+				  <option>Участие в альбомах</option>
+			</select>
+			<h2>Дискография Радмилы Павловой</h2>
+		</div>
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<div class="thumb" id="chart">
+				<table border="0" width="100%" cellpadding="5">
+				   <tr>
+					<td width="2%">1</td>
+					<td width="64px"><a href="https://vk.com/audio2000283903_456243444" target="_blank"><img src="misc/82.jpg" height="64px" width="64px"></td>
+					<td>жирманота</td>
+				   </tr>
+				   <tr>
+					<td>2</td>
+					<td width="64px"><a href="https://vk.com/audio-190544150_456239224" target="_blank"><img src="misc/42.jpg" height="64px" width="64px" href="https://vk.com/audio2000283903_456243444"></td>
+					<td>пмс среликс возьми трубку (feat. Masura Tyler)</td>
+				   </tr>
+				   <tr>
+					<td>3</td>
+					<td width="64px"><a href="https://vk.com/audio-190544150_456239248" target="_blank"><img src="misc/50.jpg" height="64px" width="64px" href="https://vk.com/audio2000283903_456243444"></td>
+					<td>Псина сутулая (feat. Ларочка Звёздная)</td>
+				   </tr>
+				   <tr>
+					<td>4</td>
+					<td width="64px"><a href="https://vk.com/audio-190544150_456239392" target="_blank"><img src="misc/109.jpg" height="64px" width="64px" href="https://vk.com/audio2000283903_456243444"></td>
+					<td>мужские месячные</td>
+				   </tr>
+				   <tr>
+					<td>5</td>
+					<td width="64px"><a href="https://vk.com/audio-190544150_456239148" target="_blank"><img src="misc/1.jpg" height="64px" width="64px" href="https://vk.com/audio2000283903_456243444"></td>
+					<td>Наркоманка (feat. Veronika Stepanova)</td>
+				   </tr>
+				</table>
+			</div>
 			<!-- АЛЬБОМЫ -->
 			<!-- АЛЬБОМЫ -->
 			<!-- АЛЬБОМЫ -->
 			<!-- АЛЬБОМЫ -->
 			<!-- АЛЬБОМЫ -->
-			<div class="thumb" id="albums">
+			<div class="thumb" id="albums" style="display: none;">
 			   <a href="https://vk.com/music/playlist/-190544150_93" target="_blank"><figure class="sign">
-				   <img src="https://sun9-73.userapi.com/impf/Jnp3RvJ2_x0k3C05dTkQwQT4z-8tks9AEhbGQg/Mm7CuVtawcA.jpg?size=592x592&quality=96&sign=292e9acfefaadafe8db3ede67520ac9d&type=audio">
+				   <img src="misc/93.jpg">
 				   <figcaption>horror rock</figcaption>
 			   </figure></a>
 			   <!-- Разделитель -->
 			   <a href="https://vk.com/music/playlist/-190544150_28" target="_blank"><figure class="sign">
-				   <img src="https://sun9-73.userapi.com/impf/c855736/v855736831/207e2f/a-DSj0FBG9E.jpg?size=592x592&quality=96&sign=36ea3cf400bcbb211b8d7bb2b5f53477&type=audio">
+				   <img src="misc/28.jpg">
 				   <figcaption>Так и живу</figcaption>
 			   </figure></a>
 			</div>
@@ -115,17 +211,17 @@
 			<!-- EP -->
 			<div class="thumb" id="ep" style="display: none;">
 			   <a href="https://vk.com/music/playlist/-190544150_124" target="_blank"><figure class="sign">
-				   <img src="https://sun9-78.userapi.com/impf/jfgerAqBA1o0-w0GGUtXu5zGec9k1bVA7pHjaQ/ImrMYVGo1DM.jpg?size=592x592&quality=96&sign=bd9200489c963f8640e3457a6100d8bb&type=audio">
+				   <img src="misc/124.jpg">
 				   <figcaption>ИДИ ТЫ НАХУЙ СО СВОИМ КРЭЙЗИ ФРОГОМ</figcaption>
 			   </figure></a>
 			   <!-- Разделитель -->
 			   <a href="https://vk.com/music/playlist/-190544150_95" target="_blank"><figure class="sign">
-				   <img src="https://sun9-26.userapi.com/impf/GBr_yZ5JKVx91KilXXmruHgKw1POV2mp17tA-w/Ny2LeglHbfU.jpg?size=592x592&quality=96&sign=269db7908e2af47440813183bc1039ad&type=audio">
+				   <img src="misc/95.jpg">
 				   <figcaption>rock</figcaption>
 			   </figure></a>
 			   <!-- Разделитель -->
 			   <a href="https://vk.com/music/playlist/-190544150_94" target="_blank"><figure class="sign">
-				   <img src="https://sun9-85.userapi.com/impf/ONWxhyPKSP55ALGoSa_lX5RgW2RVuVrUkKhjhA/X1UzJn25Ang.jpg?size=592x592&quality=96&sign=4b03c146926782874f8fcee0bcbfbd5d&type=audio">
+				   <img src="misc/94.jpg">
 				   <figcaption>horror</figcaption>
 			   </figure></a>
 			</div>
@@ -135,39 +231,108 @@
 			<!-- Синглы -->
 			<!-- Синглы -->
 			<div class="thumb" id="singles" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_122" target="_blank"><figure class="sign">
+				   <img src="misc/122.jpg">
+				   <figcaption>Казах</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_115" target="_blank"><figure class="sign">
+				   <img src="misc/115.jpg">
+				   <figcaption>e͍̊̐b̵̧̛̪͊a̸̬̣͔͐ń̸̜ṳ̴̈́͝t̼̗̭̿̑͐a͖̦̰̓y̢̻̾̆͌ā̸̘͍͚̃͝</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_109" target="_blank"><figure class="sign">
+				   <img src="misc/109.jpg">
+				   <figcaption>мужские месячные</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_98" target="_blank"><figure class="sign">
+				   <img src="misc/98.jpg">
+				   <figcaption>турбошансон (дисс на научи хорошему 2)</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_91" target="_blank"><figure class="sign">
+				   <img src="misc/91.jpg">
+				   <figcaption>максимилиан умер</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_82" target="_blank"><figure class="sign">
+				   <img src="misc/82.jpg">
+				   <figcaption>жирманота</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_79" target="_blank"><figure class="sign">
+				   <img src="misc/79.jpg">
+				   <figcaption>каникулы в чечне</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_70" target="_blank"><figure class="sign">
+				   <img src="misc/70.jpg">
+				   <figcaption>Параша Уринова сдохло</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_69" target="_blank"><figure class="sign">
+				   <img src="misc/69.jpg">
+				   <figcaption>clown</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
 			   <a href="https://vk.com/music/playlist/-190544150_60" target="_blank"><figure class="sign">
-				   <img src="https://sun9-86.userapi.com/impf/1QkTY5a9whQ9KIQgCaujMMgSwojFuTSJ2Rtj0g/a3UgWQds3rI.jpg?size=300x300&quality=96&sign=1ef4c6969729fb82e49114562dce1864&type=audio">
+				   <img src="misc/60.jpg">
 				   <figcaption>Cringe Child (remix)</figcaption>
 			   </figure></a>
 			   <!-- Разделитель -->
 			   <a href="https://vk.com/music/playlist/-190544150_50" target="_blank"><figure class="sign">
-				   <img src="https://sun9-69.userapi.com/impf/akHvMRm-YlOXXebLc4OxLMRxiwupu7LMlcG4Wg/LSJMgHyVFI4.jpg?size=300x300&quality=96&sign=af80ef765a4728e84d3a97f439132297&type=audio">
+				   <img src="misc/50.jpg">
 				   <figcaption>Псина сутулая</figcaption>
 			   </figure></a>
 			   <!-- Разделитель -->
 			   <a href="https://vk.com/music/playlist/-190544150_42" target="_blank"><figure class="sign">
-				   <img src="https://sun9-28.userapi.com/impf/k6Lrc0sT7x_pSF88aLRHl_e0uqz7G7N6PQUw_Q/rLORcKbACGQ.jpg?size=300x300&quality=96&sign=b8327607422027d7085c3e0df7ff65d6&type=audio">
+				   <img src="misc/42.jpg">
 				   <figcaption>пмс среликс возьми трубку</figcaption>
 			   </figure></a>
 			   <!-- Разделитель -->
 			   <a href="https://vk.com/music/playlist/-190544150_21" target="_blank"><figure class="sign">
-				   <img src="https://sun9-77.userapi.com/impf/6KE0GLHkTYxxoJvV1nIu2llEjkrjOK2c521CxQ/XRcysDbAuys.jpg?size=300x300&quality=96&sign=912e829cbdd9d0160e6de97fb46603a5&type=audio">
+				   <img src="misc/21.jpg">
 				   <figcaption>Хочу детей</figcaption>
 			   </figure></a>
 			   <!-- Разделитель -->
 			   <a href="https://vk.com/music/playlist/-190544150_20" target="_blank"><figure class="sign">
-				   <img src="https://sun9-27.userapi.com/impf/K4bk3N5qxu6SeReM-bbHnCqmx6J9XqrTDmRyqg/hQ0FR1lgiXk.jpg?size=300x300&quality=96&sign=e0546847ac661b8bd9d5529f11413251&type=audio">
+				   <img src="misc/20.jpg">
 				   <figcaption>Bitch I'm PSM</figcaption>
 			   </figure></a>
 			   <!-- Разделитель -->
 			   <a href="https://vk.com/music/playlist/-190544150_1" target="_blank"><figure class="sign">
-				   <img src="https://sun9-22.userapi.com/impf/c857228/v857228031/cedbe/vKS277bG9Tg.jpg?size=300x300&quality=96&sign=1496afccbe4444a7aca1edcb732b5ffb&type=audio">
+				   <img src="misc/1.jpg">
 				   <figcaption>Наркоманка</figcaption>
 			   </figure></a>
 			   <!-- Разделитель -->
 			   <a href="https://vk.com/music/playlist/-190544150_2" target="_blank"><figure class="sign">
-				   <img src="https://sun9-11.userapi.com/impf/kpurhdlndzqeYDY5gLQ_jAz_rJeTcqSMLe7tFw/N7Od5EXbvrk.jpg?size=300x300&quality=96&sign=6fdc2b4a63a293be855827dc5abd46ac&type=audio">
+				   <img src="misc/2.jpg">
 				   <figcaption>Мысли вслух</figcaption>
+			   </figure></a>
+			</div>
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<div class="thumb" id="part" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_126" target="_blank"><figure class="sign">
+				   <img src="misc/126.jpg">
+				   <figcaption>Shitpostly Ripoffs On A INdie Label</figcaption>
+				   <p class="figa">MC VLAD INDIA 2005</p>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_38" target="_blank"><figure class="sign">
+				   <img src="misc/38.jpg">
+				   <figcaption>Chris West</figcaption>
+				   <p class="figa">Chris West</p>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_36" target="_blank"><figure class="sign">
+				   <img src="misc/36.jpg">
+				   <figcaption>Хамон Мясо a.k.a. Хеймонд Сандерс</figcaption>
+				   <p class="figa">JAMONMEAT</p>
 			   </figure></a>
 			</div>
 	</body>
