@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf=8">
+		<title>Абоба</title>
+	</head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+		body{
+			background: #121212;
+		}
+		select {
+			background: #181818;
+			color: #ffffff;
+			text-align: center;
+			font-family: 'PT Sans';
+			font-weight: bold;
+			font-size: 25px;
+			border: 3px solid white;
+			padding: 5px;
+			margin: 13px 13px 0 13px;
+		}
+	   .thumb {
+		   margin-top: 0px;
+	   }
+	   h2 {
+		   margin-top: 10px;
+		   margin-bottom: 5px;
+		   text-align: center;
+		   font-family: 'PT Sans';
+		   font-weight: bold;
+		   color: white;
+	   }
+	   .sign {
+			border-radius: 5px;
+			float: left;
+			padding: 16px;
+			margin: 0 5px 10px 5px;
+			background: #181818;
+			height: 240px;
+			width: 173px;
+	   }
+	   .sign:hover {
+			background: #282828;
+			cursor:pointer
+	   }
+	   .sign img {
+			width: 170px;
+			box-shadow:0 0 3px #000;
+	   }
+	   .sign figcaption {
+			margin: 15px 0 0 0;
+			color: white;
+			font-family: 'Arial';
+			font-weight: bold;
+			font-size: 15px;
+	   }
+	   A {
+			text-decoration: none;
+	   }
+	</style>
+	<script>
+		function changePage(select) {
+			var i = select.options[select.selectedIndex];
+			if (i.value == "Альбомы") {
+				document.getElementById('albums').style.display = "block"
+				document.getElementById('ep').style.display = "none"
+				document.getElementById('singles').style.display = "none"
+			}
+			else if (i.value == "EP") {
+				document.getElementById('albums').style.display = "none"
+				document.getElementById('ep').style.display = "block"
+				document.getElementById('singles').style.display = "none"
+			}
+			else if (i.value == "Синглы") {
+				document.getElementById('albums').style.display = "none"
+				document.getElementById('ep').style.display = "none"
+				document.getElementById('singles').style.display = "block"
+			}
+			else {
+				document.getElementById('albums').style.display = "none"
+				document.getElementById('ep').style.display = "none"
+				document.getElementById('singles').style.display = "none"
+			}
+		}
+	</script>
+	<body>
+		<select id="formm" onchange="changePage(this)">
+		  <option>Популярные треки</option>
+		  <option selected="selected">Альбомы</option>
+		  <option>EP</option>
+		  <option>Синглы</option>
+		  <option>Участие в альбомах</option>
+		</select>
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<div class="thumb" id="albums">
+			   <a href="https://vk.com/music/playlist/-190544150_93" target="_blank"><figure class="sign">
+				   <img src="https://sun9-73.userapi.com/impf/Jnp3RvJ2_x0k3C05dTkQwQT4z-8tks9AEhbGQg/Mm7CuVtawcA.jpg?size=592x592&quality=96&sign=292e9acfefaadafe8db3ede67520ac9d&type=audio">
+				   <figcaption>horror rock</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_28" target="_blank"><figure class="sign">
+				   <img src="https://sun9-73.userapi.com/impf/c855736/v855736831/207e2f/a-DSj0FBG9E.jpg?size=592x592&quality=96&sign=36ea3cf400bcbb211b8d7bb2b5f53477&type=audio">
+				   <figcaption>Так и живу</figcaption>
+			   </figure></a>
+			</div>
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<div class="thumb" id="ep" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_124" target="_blank"><figure class="sign">
+				   <img src="https://sun9-78.userapi.com/impf/jfgerAqBA1o0-w0GGUtXu5zGec9k1bVA7pHjaQ/ImrMYVGo1DM.jpg?size=592x592&quality=96&sign=bd9200489c963f8640e3457a6100d8bb&type=audio">
+				   <figcaption>ИДИ ТЫ НАХУЙ СО СВОИМ КРЭЙЗИ ФРОГОМ</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_95" target="_blank"><figure class="sign">
+				   <img src="https://sun9-26.userapi.com/impf/GBr_yZ5JKVx91KilXXmruHgKw1POV2mp17tA-w/Ny2LeglHbfU.jpg?size=592x592&quality=96&sign=269db7908e2af47440813183bc1039ad&type=audio">
+				   <figcaption>rock</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_94" target="_blank"><figure class="sign">
+				   <img src="https://sun9-85.userapi.com/impf/ONWxhyPKSP55ALGoSa_lX5RgW2RVuVrUkKhjhA/X1UzJn25Ang.jpg?size=592x592&quality=96&sign=4b03c146926782874f8fcee0bcbfbd5d&type=audio">
+				   <figcaption>horror</figcaption>
+			   </figure></a>
+			</div>
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<div class="thumb" id="singles" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_60" target="_blank"><figure class="sign">
+				   <img src="https://sun9-86.userapi.com/impf/1QkTY5a9whQ9KIQgCaujMMgSwojFuTSJ2Rtj0g/a3UgWQds3rI.jpg?size=300x300&quality=96&sign=1ef4c6969729fb82e49114562dce1864&type=audio">
+				   <figcaption>Cringe Child (remix)</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_50" target="_blank"><figure class="sign">
+				   <img src="https://sun9-69.userapi.com/impf/akHvMRm-YlOXXebLc4OxLMRxiwupu7LMlcG4Wg/LSJMgHyVFI4.jpg?size=300x300&quality=96&sign=af80ef765a4728e84d3a97f439132297&type=audio">
+				   <figcaption>Псина сутулая</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_42" target="_blank"><figure class="sign">
+				   <img src="https://sun9-28.userapi.com/impf/k6Lrc0sT7x_pSF88aLRHl_e0uqz7G7N6PQUw_Q/rLORcKbACGQ.jpg?size=300x300&quality=96&sign=b8327607422027d7085c3e0df7ff65d6&type=audio">
+				   <figcaption>пмс среликс возьми трубку</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_21" target="_blank"><figure class="sign">
+				   <img src="https://sun9-77.userapi.com/impf/6KE0GLHkTYxxoJvV1nIu2llEjkrjOK2c521CxQ/XRcysDbAuys.jpg?size=300x300&quality=96&sign=912e829cbdd9d0160e6de97fb46603a5&type=audio">
+				   <figcaption>Хочу детей</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_20" target="_blank"><figure class="sign">
+				   <img src="https://sun9-27.userapi.com/impf/K4bk3N5qxu6SeReM-bbHnCqmx6J9XqrTDmRyqg/hQ0FR1lgiXk.jpg?size=300x300&quality=96&sign=e0546847ac661b8bd9d5529f11413251&type=audio">
+				   <figcaption>Bitch I'm PSM</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_1" target="_blank"><figure class="sign">
+				   <img src="https://sun9-22.userapi.com/impf/c857228/v857228031/cedbe/vKS277bG9Tg.jpg?size=300x300&quality=96&sign=1496afccbe4444a7aca1edcb732b5ffb&type=audio">
+				   <figcaption>Наркоманка</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_2" target="_blank"><figure class="sign">
+				   <img src="https://sun9-11.userapi.com/impf/kpurhdlndzqeYDY5gLQ_jAz_rJeTcqSMLe7tFw/N7Od5EXbvrk.jpg?size=300x300&quality=96&sign=6fdc2b4a63a293be855827dc5abd46ac&type=audio">
+				   <figcaption>Мысли вслух</figcaption>
+			   </figure></a>
+			</div>
+	</body>
+</html>
