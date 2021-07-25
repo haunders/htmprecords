@@ -20,6 +20,7 @@ td {
 	margin: 0;
 }
 select {
+	display: inline-block;
 	background: #181818;
 	color: #ffffff;
 	text-align: center;
@@ -28,11 +29,12 @@ select {
 	font-size: 25px;
 	border: 3px solid white;
 	padding: 5px;
-	margin: 0;
+	margin: 0 0 0 12px;
 	height: 45px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	border-radius: 10px;
 }
 .mainn {
 	color: white;
@@ -65,6 +67,9 @@ select {
 #top {
 	margin-top: -50px;
 }
+#chart {
+	margin-top: 10px;
+}
 .logo {
 	width: 560px;
 	filter: brightness(10000%);
@@ -74,6 +79,8 @@ select:hover {
 	cursor:pointer
 }
 .butt {
+	border-radius: 10px;
+	display: inline-block;
 	background: #181818;
 	color: #ffffff;
 	text-align: center;
@@ -97,6 +104,12 @@ select:hover {
 	background: #282828;
 	cursor:pointer
 }
+.memnu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
 h1 {
 	text-align: center;
 	font-family: 'PT Sans';
@@ -104,13 +117,12 @@ h1 {
 	margin: 40px 0 20px 0;
 }
 h2 {
-	position: absolute;
+	display: inline-block;
 	text-align: right;
-	right: 10px;
 	font-family: 'PT Sans';
 	color: white;
-	top: 18px;
-	margin: 0;
+	margin: 9px 0 0 0;
+	flex-grow: 1;
 }
 li {
 	list-style-type: none;
