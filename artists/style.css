@@ -37,6 +37,7 @@ select {
 	-moz-appearance: none;
 	appearance: none;
 	border-radius: 10px;
+	width: 280px;
 }
 .mainn {
 	color: white;
