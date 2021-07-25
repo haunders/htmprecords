@@ -3,149 +3,51 @@
 	<head>
 		<meta charset="utf=8">
 		<title>Дискография Радмилы Павловой</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	</head>
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-		body{
-			background: #121212;
-		}
-		td {
-			color: white;
-			font-family: 'Arial';
-			font-weight: bold;
-		}
-		select {
-			background: #181818;
-			color: #ffffff;
-			text-align: center;
-			font-family: 'PT Sans';
-			font-weight: bold;
-			font-size: 25px;
-			border: 3px solid white;
-			padding: 5px;
-			margin: 0;
-			height: 45px;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			appearance: none;
-		}
-		button {
-			background: #181818;
-			color: #ffffff;
-			text-align: center;
-			font-family: 'PT Sans';
-			font-weight: bold;
-			font-size: 25px;
-			border: 3px solid white;
-			padding: 5px;
-			margin: 0;
-			height: 45px;
-		}
-		.thumb {
-			margin-top: 10px;
-		}
-		h2 {
-			position: absolute;
-			text-align: right;
-			right: 10px;
-			font-family: 'PT Sans';
-			color: white;
-			top: 18px;
-			margin: 0;
-		}
-		li {
-			list-style-type: none;
-		}
-		.sign {
-			border-radius: 5px;
-			float: left;
-			padding: 16px;
-			margin: 5px;
-			background: #181818;
-			height: 240px;
-			width: 172px;
-		}
-		.sign:hover {
-			background: #282828;
-			cursor:pointer
-		}
-		.sign img {
-			width: 170px;
-			box-shadow:0 0 3px #000;
-		}
-		.sign figcaption {
-			margin: 15px 0 0 0;
-			color: white;
-			font-family: 'Arial';
-			font-weight: bold;
-			font-size: 15px;
-		}
-		.figa {
-			color: white;
-			font-family: 'Arial';
-			font-size: 11px;
-			margin-top: 5px;
-		}
-		A {
-			text-decoration: none;
-		}
-		ul{
-		  column-count: 3;
-		  padding: 0;
-		  margin: 10px 10px 10px 10px;
-		}
-	</style>
 	<script>
+		function removeAll() {
+			document.getElementById('chart').style.display = "none"
+			document.getElementById('albums').style.display = "none"
+			document.getElementById('ep').style.display = "none"
+			document.getElementById('singles').style.display = "none"
+			document.getElementById('part').style.display = "none"
+			document.body.style.backgroundImage = 'url(bg/none.png)'
+		}
+	
 		function changePage(select) {
 			var i = select.options[select.selectedIndex];
 			if (i.value == "Альбомы") {
-				document.getElementById('chart').style.display = "none"
+				removeAll()
 				document.getElementById('albums').style.display = "block"
-				document.getElementById('ep').style.display = "none"
-				document.getElementById('singles').style.display = "none"
-				document.getElementById('part').style.display = "none"
 			}
 			else if (i.value == "EP") {
-				document.getElementById('chart').style.display = "none"
-				document.getElementById('albums').style.display = "none"
+				removeAll()
 				document.getElementById('ep').style.display = "block"
-				document.getElementById('singles').style.display = "none"
-				document.getElementById('part').style.display = "none"
 			}
 			else if (i.value == "Синглы") {
-				document.getElementById('chart').style.display = "none"
-				document.getElementById('albums').style.display = "none"
-				document.getElementById('ep').style.display = "none"
+				removeAll()
 				document.getElementById('singles').style.display = "block"
-				document.getElementById('part').style.display = "none"
 			}
 			else if (i.value == "Участие в альбомах") {
-				document.getElementById('chart').style.display = "none"
-				document.getElementById('albums').style.display = "none"
-				document.getElementById('ep').style.display = "none"
-				document.getElementById('singles').style.display = "none"
+				removeAll()
 				document.getElementById('part').style.display = "block"
 			}
 			else if (i.value == "Популярные треки") {
+				removeAll()
 				document.getElementById('chart').style.display = "block"
-				document.getElementById('albums').style.display = "none"
-				document.getElementById('ep').style.display = "none"
-				document.getElementById('singles').style.display = "none"
-				document.getElementById('part').style.display = "none"
+				document.body.style.backgroundImage = 'url(bg/radm.png)'
 			}
 			else {
-				document.getElementById('chart').style.display = "none"
-				document.getElementById('albums').style.display = "none"
-				document.getElementById('ep').style.display = "none"
-				document.getElementById('singles').style.display = "none"
-				document.getElementById('part').style.display = "none"
+				removeAll()
 			}
 		}
 	</script>
-	<body>
+	<body id="ody">
 		<table border="0" width="100%" class="memnu">
 			<tr>
-				<td width="2%"><button>◀</button></td>
+				<td width="2%"><form action="https://haunders.github.io/htmprus"><button class="butt">◀</button></form></td>
 				<td><select id="formm" onchange="changePage(this)">
 					  <option selected="selected">Популярные треки</option>
 					  <option>Альбомы</option>
@@ -162,30 +64,30 @@
 			<!-- ТОП -->
 			<!-- ТОП -->
 			<div class="thumb" id="chart">
-				<table border="0" width="100%" cellpadding="5">
+				<table border="0" width="520px" cellpadding="5" style="margin: 0;">
 				   <tr>
-					<td width="2%">1</td>
+					<td width="6px">1</td>
 					<td width="64px"><a href="https://vk.com/audio2000283903_456243444" target="_blank"><img src="misc/82.jpg" height="64px" width="64px"></td>
-					<td>жирманота</td>
+					<td width="450px">жирманота</td>
 				   </tr>
 				   <tr>
 					<td>2</td>
-					<td width="64px"><a href="https://vk.com/audio-190544150_456239224" target="_blank"><img src="misc/42.jpg" height="64px" width="64px" href="https://vk.com/audio2000283903_456243444"></td>
+					<td width="64px"><a href="https://vk.com/audio-190544150_456239224" target="_blank"><img src="misc/42.jpg" height="64px" width="64px"></td>
 					<td>пмс среликс возьми трубку (feat. Masura Tyler)</td>
 				   </tr>
 				   <tr>
 					<td>3</td>
-					<td width="64px"><a href="https://vk.com/audio-190544150_456239248" target="_blank"><img src="misc/50.jpg" height="64px" width="64px" href="https://vk.com/audio2000283903_456243444"></td>
+					<td width="64px"><a href="https://vk.com/audio-190544150_456239248" target="_blank"><img src="misc/50.jpg" height="64px" width="64px"></td>
 					<td>Псина сутулая (feat. Ларочка Звёздная)</td>
 				   </tr>
 				   <tr>
 					<td>4</td>
-					<td width="64px"><a href="https://vk.com/audio-190544150_456239392" target="_blank"><img src="misc/109.jpg" height="64px" width="64px" href="https://vk.com/audio2000283903_456243444"></td>
+					<td width="64px"><a href="https://vk.com/audio-190544150_456239392" target="_blank"><img src="misc/109.jpg" height="64px" width="64px"></td>
 					<td>мужские месячные</td>
 				   </tr>
 				   <tr>
 					<td>5</td>
-					<td width="64px"><a href="https://vk.com/audio-190544150_456239148" target="_blank"><img src="misc/1.jpg" height="64px" width="64px" href="https://vk.com/audio2000283903_456243444"></td>
+					<td width="64px"><a href="https://vk.com/audio-190544150_456239148" target="_blank"><img src="misc/1.jpg" height="64px" width="64px"></td>
 					<td>Наркоманка (feat. Veronika Stepanova)</td>
 				   </tr>
 				</table>

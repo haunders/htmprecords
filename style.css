@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+#ody{
+	background-image: url(bg/radm.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #121212;
+}
+td {
+	color: white;
+	font-family: 'Arial';
+	font-weight: bold;
+}
+select {
+	background: #181818;
+	color: #ffffff;
+	text-align: center;
+	font-family: 'PT Sans';
+	font-weight: bold;
+	font-size: 25px;
+	border: 3px solid white;
+	padding: 5px;
+	margin: 0;
+	height: 45px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+select:hover {
+	background: #282828;
+	cursor:pointer
+}
+.butt {
+	background: #181818;
+	color: #ffffff;
+	text-align: center;
+	font-family: 'PT Sans';
+	font-weight: bold;
+	font-size: 25px;
+	border: 3px solid white;
+	padding: 5px;
+	margin: 0;
+	height: 45px;
+}
+.thumb {
+	margin-top: 10px;
+}
+.butt:hover {
+	background: #282828;
+	cursor:pointer
+}
+h2 {
+	position: absolute;
+	text-align: right;
+	right: 10px;
+	font-family: 'PT Sans';
+	color: white;
+	top: 18px;
+	margin: 0;
+}
+li {
+	list-style-type: none;
+}
+.sign {
+	border-radius: 5px;
+	float: left;
+	padding: 16px;
+	margin: 5px;
+	background: #181818;
+	height: 240px;
+	width: 172px;
+}
+.sign:hover {
+	background: #282828;
+	cursor:pointer
+}
+.sign img {
+	width: 170px;
+	box-shadow:0 0 3px #000;
+}
+.sign figcaption {
+	margin: 15px 0 0 0;
+	color: white;
+	font-family: 'Arial';
+	font-weight: bold;
+	font-size: 15px;
+}
+.figa {
+	color: white;
+	font-family: 'Arial';
+	font-size: 11px;
+	margin-top: 5px;
+}
+A {
+	text-decoration: none;
+}
+ul{
+  column-count: 3;
+  padding: 0;
+  margin: 10px 10px 10px 10px;
+}
