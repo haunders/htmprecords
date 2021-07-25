@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf=8">
+		<title>Дискография Masura Tyler</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<style>
+		#ody{
+			background-image: url(bg/masu.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: #121212;
+		}
+	</style>
+	<script>
+		function removeAll() {
+			document.getElementById('chart').style.display = "none"
+			document.getElementById('albums').style.display = "none"
+			document.getElementById('ep').style.display = "none"
+			document.getElementById('singles').style.display = "none"
+			document.getElementById('part').style.display = "none"
+			document.body.style.backgroundImage = 'url(bg/none.png)'
+		}
+	
+		function changePage(select) {
+			var i = select.options[select.selectedIndex];
+			if (i.value == "Альбомы") {
+				removeAll()
+				document.getElementById('albums').style.display = "flex"
+			}
+			else if (i.value == "EP") {
+				removeAll()
+				document.getElementById('ep').style.display = "flex"
+			}
+			else if (i.value == "Синглы") {
+				removeAll()
+				document.getElementById('singles').style.display = "flex"
+			}
+			else if (i.value == "Участие в альбомах") {
+				removeAll()
+				document.getElementById('part').style.display = "flex"
+			}
+			else if (i.value == "Популярные треки") {
+				removeAll()
+				document.getElementById('chart').style.display = "flex"
+				document.body.style.backgroundImage = 'url(bg/masu.png)'
+			}
+			else {
+				removeAll()
+			}
+		}
+	</script>
+	<body id="ody">
+			<div class="memnu">
+				<form action="https://haunders.github.io/htmprus"><button class="butt">◀</button></form></td>
+				<select id="formm" onchange="changePage(this)">
+					<option selected="selected">Популярные треки</option>
+					<option>Альбомы</option>
+					<option>EP</option>
+					<option>Синглы</option>
+					<option>Участие в альбомах</option>
+				</select>
+				<h2>Дискография Masura Tyler</h2></td>
+			</div>
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<div id="chart">
+				<table border="0" width="790px" cellpadding="5" style="margin: 0;">
+				   <tr>
+					<td width="10px"></td>
+					<td width="80px"></td>
+					<td width="700px"></td>
+				   </tr>
+				   <tr>
+					<td>1</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_42" target="_blank"><img src="misc/42.jpg" height="80px"></td>
+					<td>пмс среликс возьми трубку (feat. Радмила Павлова)</td>
+				   </tr>
+				   <tr>
+					<td>2</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_71" target="_blank"><img src="misc/71.jpg" height="80px"></td>
+					<td>Вискарь</td>
+				   </tr>
+				   <tr>
+					<td>3</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_122" target="_blank"><img src="misc/122.jpg" height="80px"></td>
+					<td>Казах (feat. Радмила Павлова, Paula Gregori)</td>
+				   </tr>
+				   <tr>
+					<td>4</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_121" target="_blank"><img src="misc/121.jpg" height="80px"></td>
+					<td>мотивационный пурдж зе пойзон ремикс (feat. Zenia And The Diamonds)</td>
+				   </tr>
+				   <tr>
+					<td>5</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_83" target="_blank"><img src="misc/83.jpg" height="80px"></td>
+					<td>Освежи меня (Ass Virgin) (feat. MC VLAD INDIA 2005)</td>
+				   </tr>
+				</table>
+			</div>
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<div class="thumb" id="albums" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_78" target="_blank"><figure class="sign">
+				   <img src="misc/78.jpg">
+				   <figcaption>Семейные Ценности</figcaption>
+			   </figure></a>
+			</div>
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<div class="thumb" id="ep" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_73" target="_blank"><figure class="sign">
+				   <img src="misc/73.jpg">
+				   <figcaption>Королевские Ценности</figcaption>
+			   </figure></a>
+			</div>
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<div class="thumb" id="singles" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_122" target="_blank"><figure class="sign">
+				   <img src="misc/122.jpg">
+				   <figcaption>Казах</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_121" target="_blank"><figure class="sign">
+				   <img src="misc/121.jpg">
+				   <figcaption>мотивационный пурдж зе пойзон ремикс</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_106" target="_blank"><figure class="sign">
+				   <img src="misc/106.jpg">
+				   <figcaption>Конец собачьих дней</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_83" target="_blank"><figure class="sign">
+				   <img src="misc/83.jpg">
+				   <figcaption>Освежи меня (Ass Virgin)</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_72" target="_blank"><figure class="sign">
+				   <img src="misc/72.jpg">
+				   <figcaption>Я не робот</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_71" target="_blank"><figure class="sign">
+				   <img src="misc/71.jpg">
+				   <figcaption>Вискарь</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_47" target="_blank"><figure class="sign">
+				   <img src="misc/47.jpg">
+				   <figcaption>О Нет!</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_42" target="_blank"><figure class="sign">
+				   <img src="misc/42.jpg">
+				   <figcaption>пмс среликс возьми трубку</figcaption>
+			   </figure></a>
+			</div>
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<div class="thumb" id="part" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_93" target="_blank"><figure class="sign">
+				   <img src="misc/93.jpg">
+				   <figcaption>horror rock</figcaption>
+				   <p class="figa">Радмила Павлова</p>
+			   </figure></a>
+			</div>
+	</body>
+</html>

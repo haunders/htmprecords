@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf=8">
+		<title>Дискография Лесбийских Манер</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<style>
+		#ody{
+			background-image: url(bg/lesb.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: #121212;
+		}
+	</style>
+	<script>
+		function removeAll() {
+			document.getElementById('chart').style.display = "none"
+			document.getElementById('albums').style.display = "none"
+			document.getElementById('ep').style.display = "none"
+			document.getElementById('singles').style.display = "none"
+			document.getElementById('part').style.display = "none"
+			document.body.style.backgroundImage = 'url(bg/none.png)'
+		}
+	
+		function changePage(select) {
+			var i = select.options[select.selectedIndex];
+			if (i.value == "Альбомы") {
+				removeAll()
+				document.getElementById('albums').style.display = "flex"
+			}
+			else if (i.value == "EP") {
+				removeAll()
+				document.getElementById('ep').style.display = "flex"
+			}
+			else if (i.value == "Синглы") {
+				removeAll()
+				document.getElementById('singles').style.display = "flex"
+			}
+			else if (i.value == "Участие в альбомах") {
+				removeAll()
+				document.getElementById('part').style.display = "flex"
+			}
+			else if (i.value == "Популярные треки") {
+				removeAll()
+				document.getElementById('chart').style.display = "flex"
+				document.body.style.backgroundImage = 'url(bg/lesb.png)'
+			}
+			else {
+				removeAll()
+			}
+		}
+	</script>
+	<body id="ody">
+			<div class="memnu">
+				<form action="https://haunders.github.io/htmprus"><button class="butt">◀</button></form></td>
+				<select id="formm" onchange="changePage(this)">
+					<option selected="selected">Популярные треки</option>
+					<option>Альбомы</option>
+					<option>EP</option>
+					<option>Синглы</option>
+				</select>
+				<h2>Дискография Лесбийских Манер</h2></td>
+			</div>
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<div id="chart">
+				<table border="0" width="790px" cellpadding="5" style="margin: 0;">
+				   <tr>
+					<td width="10px"></td>
+					<td width="80px"></td>
+					<td width="700px"></td>
+				   </tr>
+				   <tr>
+					<td>1</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_16" target="_blank"><img src="misc/16.jpg" height="80px"></td>
+					<td>Индийский рай (feat. MC VLAD INDIA 2005)</td>
+				   </tr>
+				   <tr>
+					<td>2</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_125" target="_blank"><img src="misc/125.jpg" height="80px"></td>
+					<td>Венера Муха Транс (feat. MC VLAD INDIA 2005)</td>
+				   </tr>
+				   <tr>
+					<td>3</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_26" target="_blank"><img src="misc/26.jpg" height="80px"></td>
+					<td>Кролик №1</td>
+				   </tr>
+				   <tr>
+					<td>4</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_12" target="_blank"><img src="misc/12.jpg" height="80px"></td>
+					<td>Sorry For Stars</td>
+				   </tr>
+				   <tr>
+					<td>5</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_23" target="_blank"><img src="misc/23.jpg" height="80px"></td>
+					<td>крутая эпитафия на крутые похороны</td>
+				   </tr>
+				</table>
+			</div>
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<div class="thumb" id="albums" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_8" target="_blank"><figure class="sign">
+				   <img src="misc/8.jpg">
+				   <figcaption>Неизданное</figcaption>
+			   </figure></a>
+			</div>
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<div class="thumb" id="ep" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_31" target="_blank"><figure class="sign">
+				   <img src="misc/31.jpg">
+				   <figcaption>Лесбийские Манеры</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_26" target="_blank"><figure class="sign">
+				   <img src="misc/26.jpg">
+				   <figcaption>死</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_23" target="_blank"><figure class="sign">
+				   <img src="misc/23.jpg">
+				   <figcaption>Первая лесбийская свадьба в Казахстане (Алексей Басько лох!)</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_12" target="_blank"><figure class="sign">
+				   <img src="misc/12.jpg">
+				   <figcaption>Леди Гроб твой враг</figcaption>
+			   </figure></a>
+			</div>
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<div class="thumb" id="singles" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_125" target="_blank"><figure class="sign">
+				   <img src="misc/125.jpg">
+				   <figcaption>Венера Муха Транс</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_16" target="_blank"><figure class="sign">
+				   <img src="misc/16.jpg">
+				   <figcaption>Индийский рай</figcaption>
+			   </figure></a>
+			</div>
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<div class="thumb" id="part" style="display: none;">
+			</div>
+	</body>
+</html>

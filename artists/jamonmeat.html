@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf=8">
+		<title>Дискография JAMONMEAT</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<style>
+		#ody{
+			background-image: url(bg/jamo.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: #121212;
+		}
+	</style>
+	<script>
+		function removeAll() {
+			document.getElementById('chart').style.display = "none"
+			document.getElementById('albums').style.display = "none"
+			document.getElementById('ep').style.display = "none"
+			document.getElementById('singles').style.display = "none"
+			document.getElementById('part').style.display = "none"
+			document.body.style.backgroundImage = 'url(bg/none.png)'
+		}
+	
+		function changePage(select) {
+			var i = select.options[select.selectedIndex];
+			if (i.value == "Альбомы") {
+				removeAll()
+				document.getElementById('albums').style.display = "flex"
+			}
+			else if (i.value == "EP") {
+				removeAll()
+				document.getElementById('ep').style.display = "flex"
+			}
+			else if (i.value == "Синглы") {
+				removeAll()
+				document.getElementById('singles').style.display = "flex"
+			}
+			else if (i.value == "Участие в альбомах") {
+				removeAll()
+				document.getElementById('part').style.display = "flex"
+			}
+			else if (i.value == "Популярные треки") {
+				removeAll()
+				document.getElementById('chart').style.display = "flex"
+				document.body.style.backgroundImage = 'url(bg/jamo.png)'
+			}
+			else {
+				removeAll()
+			}
+		}
+	</script>
+	<body id="ody">
+			<div class="memnu">
+				<form action="https://haunders.github.io/htmprus"><button class="butt">◀</button></form></td>
+				<select id="formm" onchange="changePage(this)">
+					<option selected="selected">Популярные треки</option>
+					<option>Альбомы</option>
+					<option>EP</option>
+					<option>Синглы</option>
+				</select>
+				<h2>Дискография JAMONMEAT</h2></td>
+			</div>
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<div id="chart">
+				<table border="0" width="790px" cellpadding="5" style="margin: 0;">
+				   <tr>
+					<td width="10px"></td>
+					<td width="80px"></td>
+					<td width="700px"></td>
+				   </tr>
+				   <tr>
+					<td>1</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_14" target="_blank"><img src="misc/14.jpg" height="80px"></td>
+					<td>смотри, полина гагарина (feat. Veronika Stepanova)</td>
+				   </tr>
+				   <tr>
+					<td>2</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_29" target="_blank"><img src="misc/29.jpg" height="80px"></td>
+					<td>новая сила мастурбации</td>
+				   </tr>
+				   <tr>
+					<td>3</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_54" target="_blank"><img src="misc/54.jpg" height="80px"></td>
+					<td>Северная Корея (feat. Лида Мамбетова)</td>
+				   </tr>
+				   <tr>
+					<td>4</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_111" target="_blank"><img src="misc/111.jpg" height="80px"></td>
+					<td>джерри очень душевно спел разными голосами</td>
+				   </tr>
+				   <tr>
+					<td>5</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_100" target="_blank"><img src="misc/100.jpg" height="80px"></td>
+					<td>I've Been Forgot</td>
+				   </tr>
+				</table>
+			</div>
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<div class="thumb" id="albums" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_111" target="_blank"><figure class="sign">
+				   <img src="misc/111.jpg">
+				   <figcaption>аудиомемы</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_102" target="_blank"><figure class="sign">
+				   <img src="misc/102.jpg">
+				   <figcaption>Feesh</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_68" target="_blank"><figure class="sign">
+				   <img src="misc/68.jpg">
+				   <figcaption>Ой... Я опять натворил херни</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_36" target="_blank"><figure class="sign">
+				   <img src="misc/36.jpg">
+				   <figcaption>Хамон Мясо a.k.a. Хеймонд Сандерс</figcaption>
+			   </figure></a>
+			</div>
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<div class="thumb" id="ep" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_48" target="_blank"><figure class="sign">
+				   <img src="misc/48.jpg">
+				   <figcaption>Манник</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_15" target="_blank"><figure class="sign">
+				   <img src="misc/15.jpg">
+				   <figcaption>JAMONMEAT</figcaption>
+			   </figure></a>
+			</div>
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<div class="thumb" id="singles" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_112" target="_blank"><figure class="sign">
+				   <img src="misc/112.jpg">
+				   <figcaption>пипяо че происх</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_104" target="_blank"><figure class="sign">
+				   <img src="misc/104.jpg">
+				   <figcaption>Хрусталь</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_103" target="_blank"><figure class="sign">
+				   <img src="misc/103.jpg">
+				   <figcaption>Recycle Gold!</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_100" target="_blank"><figure class="sign">
+				   <img src="misc/100.jpg">
+				   <figcaption>I've Been Forgot</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_97" target="_blank"><figure class="sign">
+				   <img src="misc/97.jpg">
+				   <figcaption>I'm a Maybe Baby</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_96" target="_blank"><figure class="sign">
+				   <img src="misc/96.jpg">
+				   <figcaption>Immortooine</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_92" target="_blank"><figure class="sign">
+				   <img src="misc/92.jpg">
+				   <figcaption>Happy Noises</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_84" target="_blank"><figure class="sign">
+				   <img src="misc/84.jpg">
+				   <figcaption>Froot Smasher</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_67" target="_blank"><figure class="sign">
+				   <img src="misc/67.jpg">
+				   <figcaption>Gimme! Gimme! Gimme More!</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_56" target="_blank"><figure class="sign">
+				   <img src="misc/56.jpg">
+				   <figcaption>спирс пошла в клуб без белья</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_54" target="_blank"><figure class="sign">
+				   <img src="misc/54.jpg">
+				   <figcaption>Северная Корея</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_35" target="_blank"><figure class="sign">
+				   <img src="misc/35.jpg">
+				   <figcaption>Art Beach</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_29" target="_blank"><figure class="sign">
+				   <img src="misc/29.jpg">
+				   <figcaption>новая сила мастурбации</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_27" target="_blank"><figure class="sign">
+				   <img src="misc/27.jpg">
+				   <figcaption>руки прочь от джерри хейл!</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_14" target="_blank"><figure class="sign">
+				   <img src="misc/14.jpg">
+				   <figcaption>смотри, полина гагарина</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_11" target="_blank"><figure class="sign">
+				   <img src="misc/11.jpg">
+				   <figcaption>марув разъебала додзё</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_5" target="_blank"><figure class="sign">
+				   <img src="misc/5.jpg">
+				   <figcaption>дуня устроила ультранасилие на острове пингвинов</figcaption>
+			   </figure></a>
+			</div>
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<div class="thumb" id="part" style="display: none;">
+			</div>
+	</body>
+</html>

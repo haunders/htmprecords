@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf=8">
+		<title>Дискография Лиды Мамбетовой</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<style>
+		#ody{
+			background-image: url(bg/lida.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: #121212;
+		}
+	</style>
+	<script>
+		function removeAll() {
+			document.getElementById('chart').style.display = "none"
+			document.getElementById('albums').style.display = "none"
+			document.getElementById('ep').style.display = "none"
+			document.getElementById('singles').style.display = "none"
+			document.getElementById('part').style.display = "none"
+			document.body.style.backgroundImage = 'url(bg/none.png)'
+		}
+	
+		function changePage(select) {
+			var i = select.options[select.selectedIndex];
+			if (i.value == "Альбомы") {
+				removeAll()
+				document.getElementById('albums').style.display = "flex"
+			}
+			else if (i.value == "EP") {
+				removeAll()
+				document.getElementById('ep').style.display = "flex"
+			}
+			else if (i.value == "Синглы") {
+				removeAll()
+				document.getElementById('singles').style.display = "flex"
+			}
+			else if (i.value == "Участие в альбомах") {
+				removeAll()
+				document.getElementById('part').style.display = "flex"
+			}
+			else if (i.value == "Популярные треки") {
+				removeAll()
+				document.getElementById('chart').style.display = "flex"
+				document.body.style.backgroundImage = 'url(bg/lida.png)'
+			}
+			else {
+				removeAll()
+			}
+		}
+	</script>
+	<body id="ody">
+			<div class="memnu">
+				<form action="https://haunders.github.io/htmprus"><button class="butt">◀</button></form></td>
+				<select id="formm" onchange="changePage(this)">
+					<option selected="selected">Популярные треки</option>
+					<option>EP</option>
+					<option>Синглы</option>
+					<option>Участие в альбомах</option>
+				</select>
+				<h2>Дискография Лиды Мамбетовой</h2></td>
+			</div>
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<!-- ТОП -->
+			<div id="chart">
+				<table border="0" width="790px" cellpadding="5" style="margin: 0;">
+				   <tr>
+					<td width="10px"></td>
+					<td width="80px"></td>
+					<td width="700px"></td>
+				   </tr>
+				   <tr>
+					<td>1</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_90" target="_blank"><img src="misc/90.jpg" height="80px"></td>
+					<td>Yi Jian Mei</td>
+				   </tr>
+				   <tr>
+					<td>2</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_54" target="_blank"><img src="misc/54.jpg" height="80px"></td>
+					<td>Северная Корея (feat. JAMONMEAT)</td>
+				   </tr>
+				   <tr>
+					<td>3</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_59" target="_blank"><img src="misc/59.jpg" height="80px"></td>
+					<td>Billie Jean (feat. MC Lyubasha)</td>
+				   </tr>
+				   <tr>
+					<td>4</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_131" target="_blank"><img src="misc/131.jpg" height="80px"></td>
+					<td>Нижний секс (feat. Ларочка Звёздная, ABDC, koresh55)</td>
+				   </tr>
+				   <tr>
+					<td>5</td>
+					<td><a href="https://vk.com/music/playlist/-190544150_21" target="_blank"><img src="misc/21.jpg" height="80px"></td>
+					<td>Хочу детей (feat. Радмила Павлова)</td>
+				   </tr>
+				</table>
+			</div>
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<!-- АЛЬБОМЫ -->
+			<div class="thumb" id="albums" style="display: none;">
+			</div>
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<!-- EP -->
+			<div class="thumb" id="ep" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_58" target="_blank"><figure class="sign">
+				   <img src="misc/58.jpg">
+				   <figcaption>LAEP</figcaption>
+			   </figure></a>
+			</div>
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<!-- Синглы -->
+			<div class="thumb" id="singles" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_90" target="_blank"><figure class="sign">
+				   <img src="misc/90.jpg">
+				   <figcaption>Yi Jian Mei</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_59" target="_blank"><figure class="sign">
+				   <img src="misc/59.jpg">
+				   <figcaption>Billie Jean</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_54" target="_blank"><figure class="sign">
+				   <img src="misc/54.jpg">
+				   <figcaption>Северная Корея</figcaption>
+			   </figure></a>
+			   <!-- Разделитель -->
+			   <a href="https://vk.com/music/playlist/-190544150_21" target="_blank"><figure class="sign">
+				   <img src="misc/21.jpg">
+				   <figcaption>Хочу детей</figcaption>
+			   </figure></a>
+			</div>
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<!-- Участие -->
+			<div class="thumb" id="part" style="display: none;">
+			   <a href="https://vk.com/music/playlist/-190544150_108" target="_blank"><figure class="sign">
+				   <img src="misc/108.jpg">
+				   <figcaption>Моё Первое Переиздание</figcaption>
+				   <p class="figa">Ларочка Звёздная</p>
+			   </figure></a>
+			   <a href="https://vk.com/music/playlist/-190544150_131" target="_blank"><figure class="sign">
+				   <img src="misc/131.jpg">
+				   <figcaption>Мой Первый Альбом</figcaption>
+				   <p class="figa">Ларочка Звёздная</p>
+			   </figure></a>
+			</div>
+	</body>
+</html>
