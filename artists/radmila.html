@@ -8,9 +8,6 @@
 	</head>
 	<style>
 		#ody{
-			background-image: url(bg/radm.png);
-			background-size: cover;
-			background-repeat: no-repeat;
 			background-color: #121212;
 		}
 	</style>
@@ -21,7 +18,7 @@
 			document.getElementById('ep').style.display = "none"
 			document.getElementById('singles').style.display = "none"
 			document.getElementById('part').style.display = "none"
-			document.body.style.backgroundImage = 'url(bg/none.png)'
+			document.getElementById('bg').style.display = "none"
 		}
 	
 		function changePage(select) {
@@ -45,7 +42,7 @@
 			else if (i.value == "Популярные треки") {
 				removeAll()
 				document.getElementById('chart').style.display = "flex"
-				document.body.style.backgroundImage = 'url(bg/radm.png)'
+				document.getElementById('bg').style.display = "block"
 			}
 			else {
 				removeAll()
@@ -53,6 +50,8 @@
 		}
 	</script>
 	<body id="ody">
+			<div class="bg" id="bg">
+			</div>
 			<div class="memnu">
 				<form action="https://haunders.github.io/htmprus"><button class="butt">◀</button></form></td>
 				<select id="formm" onchange="changePage(this)">
@@ -70,12 +69,7 @@
 			<!-- ТОП -->
 			<!-- ТОП -->
 			<div id="chart">
-				<table border="0" width="790px" cellpadding="5" style="margin: 0;">
-				   <tr>
-					<td width="10px"></td>
-					<td width="80px"></td>
-					<td width="700px"></td>
-				   </tr>
+				<table cellpadding="5">
 				   <tr>
 					<td>1</td>
 					<td><a href="https://vk.com/music/playlist/-190544150_82" target="_blank"><img src="misc/82.jpg" height="80px"></td>
