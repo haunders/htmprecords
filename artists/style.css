@@ -9,7 +9,7 @@ url('font/BebasNeueBold.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
-@media(max-device-width: 700px) {
+@media handheld, (max-device-width: 700px) {
 	.bg {display: none!important;}
 	table {width: 100%!important;}
 	td {width: 120px!important; font-size: 30px!important;}
