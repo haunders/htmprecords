@@ -6,53 +6,10 @@
 		<link rel="stylesheet" href="style.css" type="text/css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	</head>
-	<style>
-		#ody{
-			background-image: url(bg/jamo.png);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-color: #121212;
-		}
-	</style>
-	<script>
-		function removeAll() {
-			document.getElementById('chart').style.display = "none"
-			document.getElementById('albums').style.display = "none"
-			document.getElementById('ep').style.display = "none"
-			document.getElementById('singles').style.display = "none"
-			document.getElementById('part').style.display = "none"
-			document.body.style.backgroundImage = 'url(bg/none.png)'
-		}
-	
-		function changePage(select) {
-			var i = select.options[select.selectedIndex];
-			if (i.value == "Альбомы") {
-				removeAll()
-				document.getElementById('albums').style.display = "flex"
-			}
-			else if (i.value == "EP") {
-				removeAll()
-				document.getElementById('ep').style.display = "flex"
-			}
-			else if (i.value == "Синглы") {
-				removeAll()
-				document.getElementById('singles').style.display = "flex"
-			}
-			else if (i.value == "Участие в альбомах") {
-				removeAll()
-				document.getElementById('part').style.display = "flex"
-			}
-			else if (i.value == "Популярные треки") {
-				removeAll()
-				document.getElementById('chart').style.display = "flex"
-				document.body.style.backgroundImage = 'url(bg/jamo.png)'
-			}
-			else {
-				removeAll()
-			}
-		}
-	</script>
+	<script src="script.js" type="text/javascript"></script>
 	<body id="ody">
+			<div class="bg" id="bg" style="background-image: url(bg/jamo.png);">
+			</div>
 			<div class="memnu">
 				<form action="https://haunders.github.io/htmprus"><button class="butt">◀</button></form></td>
 				<select id="formm" onchange="changePage(this)">

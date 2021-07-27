@@ -35,6 +35,9 @@ td {
 	font-weight: bold;
 	font-size: 20px;
 }
+#ody {
+	background-color: #121212;
+}
 #bb {
 	margin: 0;
 }
@@ -64,6 +67,7 @@ select {
 	padding: 5px;
 	margin: 0 0 0 12px;
 	height: 45px;
+	width: 250px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -74,7 +78,6 @@ select {
 	z-index: -1;
 	width: 100%;
 	height: 98%;
-	background-image: url(bg/radm.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: right;
@@ -200,12 +203,20 @@ li {
 	font-family: 'Arial';
 	font-weight: bold;
 	font-size: 15px;
+	-webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .figa {
 	color: white;
 	font-family: 'Arial';
 	font-size: 11px;
 	margin-top: 5px;
+	-webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 A {
 	text-decoration: none;
