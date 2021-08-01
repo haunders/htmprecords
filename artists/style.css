@@ -9,8 +9,8 @@ url('font/BebasNeueBold.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
-@media handheld, (max-device-width: 700px) {
-	.bg {display: none!important;}
+@media (max-device-width: 700px) {
+	.bg {bottom:0; height: 55%!important;}
 	table {width: 100%!important;}
 	td {width: 120px!important; font-size: 30px!important;}
 	td:first-child {width: 15px!important;}
@@ -54,6 +54,10 @@ td:first-child {
 }
 td:last-child {
    width: 700px;
+}
+tr:hover {
+	background: rgba(255, 255, 255, 0.08);
+	cursor: pointer;
 }
 select {
 	display: inline-block;
