@@ -93,6 +93,7 @@ select {
 	height: 740px;
 	margin: 0;
 	text-align: center;
+	background-position: center center;
 }
 .mainn p {
 	font-family: 'Bebas Neue';
