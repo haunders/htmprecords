@@ -15,6 +15,7 @@
 				<select id="formm" onchange="changePage(this)">
 					<option selected="selected">Популярные треки</option>
 					<option>Синглы</option>
+					<option>Участие в релизах</option>
 				</select>
 				<h2>Дискография свекКрови</h2></td>
 			</div>
@@ -24,11 +25,11 @@
 			<!-- ТОП -->
 			<!-- ТОП -->
 			<div id="chart">
-				<table border="0" width="790px" cellpadding="5" style="margin: 0;">
+				<table cellpadding="5">
 					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_171')">
 					 <td>1</td>
 					 <td><img src="misc/171.jpg" height="80px"></td>
-					 <td>Пыль (megamix) (feat. Елена Восточная, MC VLAD INDIA 2005, $tePUSHk@ & Zenia And The Diamonds)</td>
+					 <td>Пыль (megamix)</td>
 					</tr>
 					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_155')">
 						<td>2</td>
@@ -38,7 +39,7 @@
 					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_146')">
 						<td>3</td>
 						<td><img src="misc/146.jpg" height="80px"></td>
-						<td>(Кто такие) Контркультурщики (feat. Радмила Павлова)</td>
+						<td>(Кто такие) Контркультурщики</td>
 					</tr>
 				</table>
 			</div>
@@ -62,16 +63,6 @@
 			<!-- Синглы -->
 			<!-- Синглы -->
 			<div class="thumb" id="singles" style="display: none;">
-				<a href="https://vk.com/music/playlist/-190544150_167" target="_blank"><figure class="sign">
-					<img src="misc/167.jpg">
-					<figcaption>Пыль (megamix)</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_138" target="_blank"><figure class="sign">
-					<img src="misc/138.jpg">
-					<figcaption>(Кто такие) Контркультурщики</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
 			   <a href="https://vk.com/music/playlist/-190544150_155" target="_blank"><figure class="sign">
 				   <img src="misc/155.jpg">
 				   <figcaption>Бездельники с вагиной</figcaption>
@@ -84,6 +75,22 @@
 			<!-- Участие -->
 			<!-- Участие -->
 			<div class="thumb" id="part" style="display: none;">
+				<table width="790px" cellpadding="5" style="margin: 0;">
+					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_171')">
+					 <td><img src="misc/171.jpg" height="80px"></td>
+					 <td>
+						Пыль (megamix)
+						<figcaption id="subartist">Елена Восточная</figcaption>
+					 </td>
+					</tr>
+					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_172')">
+					 <td><img src="misc/172.jpg" height="80px"></td>
+					 <td>
+						(Кто такие) Контркультурщики
+						<figcaption id="subartist">Радмила Павлова</figcaption>
+					 </td>
+					</tr>
+				</table>
 			</div>
 	</body>
 </html>

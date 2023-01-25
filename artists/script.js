@@ -20,7 +20,7 @@ function changePage(select) {
 		removeAll()
 		document.getElementById('singles').style.display = "flex"
 	}
-	else if (i.value == "Участие в альбомах") {
+	else if (i.value == "Участие в релизах") {
 		removeAll()
 		document.getElementById('part').style.display = "flex"
 	}

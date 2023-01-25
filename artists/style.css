@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @font-face {
 font-family: 'Bebas Neue Bold';
 src: url('font/BebasNeueBold.eot');
@@ -31,8 +31,8 @@ font-style: normal;
 }
 td {
 	color: white;
-	font-family: 'Didact Gothic';
-	font-weight: bold;
+	font-family: 'Montserrat';
+	font-weight: 600;
 	font-size: 20px;
 }
 #ody {
@@ -164,14 +164,14 @@ select:hover {
 }
 h1 {
 	text-align: center;
-	font-family: 'PT Sans';
+	font-family: 'Arial';
 	color: white;
 	margin: 40px 0 20px 0;
 }
 h2 {
 	display: inline-block;
 	text-align: right;
-	font-family: 'PT Sans';
+	font-family: 'Arial';
 	color: white;
 	margin: 9px 0 0 0;
 	flex-grow: 1;
@@ -187,7 +187,6 @@ li {
 .sign {
 	display: inline-block;
 	border-radius: 5px;
-	float: left;
 	padding: 16px;
 	margin: 5px;
 	background: #181818;
@@ -212,6 +211,12 @@ li {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+#subartist {
+	margin-top: 0px;
+	font-size: 13px;
+	color: #ccc;
+	font-weight: 500;
 }
 .figa {
 	color: white;
