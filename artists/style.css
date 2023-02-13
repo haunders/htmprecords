@@ -25,6 +25,15 @@ font-style: normal;
 	.sign figcaption {font-size: 30px!important;}
 	.figa {font-size: 20px!important;}
 	#signart {height: 300px!important;}
+	#laast {font-size: 35px!important;}
+	.signmain {height: 205px!important; width: 880px!important;}
+	.signmain img {width: 200px!important;}
+	.signmain figcaption.title {font-size: 29px!important;}
+	.signmain figcaption.date {font-size: 21px!important;}
+	.signmain figcaption.desc {font-size: 24px!important;}
+	td {max-width: 750px!important;}
+	#albumcap {font-size: 21px!important;}
+	#subartist {font-size: 25px!important;}
 }
 ::-webkit-scrollbar {
   width: 0;
@@ -32,8 +41,12 @@ font-style: normal;
 td {
 	color: white;
 	font-family: 'Montserrat';
-	font-weight: 600;
-	font-size: 20px;
+	font-weight: 500;
+	font-size: 16px;
+	max-width: 480px;
+	white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
 }
 #ody {
 	background-color: #121212;
@@ -44,26 +57,54 @@ td {
 table {
 	border: 0;
 	margin: 0;
-	width: 790px;
+	width: 600px;
 }
 td {
-   width: 80px;
+   width: 50px;
 }
 td:first-child {
    width: 10px;
 }
 td:last-child {
-   width: 700px;
+   width: 540px;
 }
 tr:hover {
 	background: rgba(255, 255, 255, 0.08);
+}
+#chart tr:hover {
 	cursor: pointer;
+}
+#part tr:hover {
+	cursor: pointer;
+}
+#albumcap {
+	color: #d7d7d7;
+	font-size: 11px;
+	font-weight: 400;
+	white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+}
+#laast {
+	color: #fff;
+	font-family: 'Arial';
+	font-weight: bold;
+	font-size: 18px;
+	margin: 10px 0 2px 5px;
+}
+#glav {
+	margin-top: 10px; 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: left;
 }
 select {
 	display: inline-block;
 	background: #181818;
 	color: #ffffff;
-	text-align: center;
+	text-align: left;
 	font-family: 'PT Sans';
 	font-weight: bold;
 	font-size: 25px;
@@ -71,21 +112,11 @@ select {
 	padding: 5px;
 	margin: 0 0 0 12px;
 	height: 45px;
-	width: 250px;
+	width: 450px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 	border-radius: 10px;
-}
-.bg {
-	position: absolute;
-	z-index: -1;
-	width: 100%;
-	height: 98%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: right;
-	-webkit-mask-image: -webkit-gradient(linear, left 75%, left bottom, from(rgba(0,0,0,2)), to(rgba(0,0,0,0)))
 }
 .mainn {
 	color: white;
@@ -152,6 +183,14 @@ select:hover {
 	align-items: stretch;
 	align-content: center;
 }
+.thumb2 {
+	margin: 10px 0 0 15px; 
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: left;
+}
 .butt:hover {
 	background: #282828;
 	cursor:pointer
@@ -161,6 +200,7 @@ select:hover {
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: stretch;
+	margin: 20px 10px 0 0;
 }
 h1 {
 	text-align: center;
@@ -212,6 +252,52 @@ li {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.signmain {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 16px;
+	margin: 5px 5px 5px 5px;
+	background: #242424;
+	height: 145px;
+	width: 600px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch;
+}
+.signmain img {
+	width: 145px;
+	box-shadow:0 0 3px #000;
+}
+.signmain figcaption.title {
+	margin: 16px 0 0 20px;
+	color: white;
+	font-family: 'Arial';
+	font-weight: bold;
+	font-size: 19px;
+	-webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.signmain figcaption.date {
+	margin: 15px 0 0 20px;
+	color: rgb(215, 215, 215);
+	font-family: 'Arial';
+	font-weight: 600;
+	font-size: 11px;
+}
+.signmain figcaption.desc {
+	margin: 8px 0 0 20px;
+	color: rgb(215, 215, 215);
+	font-family: 'Arial';
+	font-weight: 600;
+	font-size: 12px;
+}
+.signmain:hover {
+	background: #363636;
+	cursor:pointer
+}
 #subartist {
 	margin-top: 0px;
 	font-size: 13px;
@@ -235,6 +321,12 @@ ul{
 	column-count: 3;
 	padding: 0;
 	margin: 10px 10px 10px 10px;
+}
+#actual {
+	text-align: center;
+}
+.label_name {
+	font-size: 1.4em;
 }
 .e404 {
 	position: fixed;

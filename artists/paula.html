@@ -2,51 +2,73 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>Дискография Paula Gregori</title>
+		<title>Paula Gregori</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	</head>
 	<script src="script.js" type="text/javascript"></script>
 	<body id="ody">
-			<div class="bg" id="bg" style="background-image: url(bg/paul.png);">
-			</div>
 			<div class="memnu">
-				<form action="https://haunders.github.io/htmprus"><button class="butt">◀</button></form></td>
 				<select id="formm" onchange="changePage(this)">
 					<option selected="selected">Популярные треки</option>
 					<option>Синглы</option>
 					<option>Участие в релизах</option>
 				</select>
-				<h2>Дискография Paula Gregori</h2></td>
+				<h2>Paula Gregori</h2></td>
 			</div>
 			<!-- ТОП -->
 			<!-- ТОП -->
 			<!-- ТОП -->
 			<!-- ТОП -->
 			<!-- ТОП -->
-			<div id="chart">
-				<table cellpadding="5">
-				   <tr onclick="window.open('https://vk.com/music/playlist/-190544150_172')">
-					<td>1</td>
-					<td><img src="misc/172.jpg" height="80px"></td>
-					<td>Казах</td>
-				   </tr>
-				   <tr onclick="window.open('https://vk.com/music/playlist/-190544150_110')">
-					<td>2</td>
-					<td><img src="misc/110.jpg" height="80px"></td>
-					<td>Натура</td>
-				   </tr>
-				   <tr onclick="window.open('https://vk.com/music/playlist/-190544150_113')">
-					<td>3</td>
-					<td><img src="misc/113.jpg" height="80px"></td>
-					<td>Новый мерч</td>
-				   </tr>
-				   <tr onclick="window.open('https://vk.com/music/playlist/-190544150_104')">
-					<td>4</td>
-					<td><img src="misc/104.jpg" height="80px"></td>
-					<td>Хрусталь</td>
-				   </tr>
-				</table>
+			<div id="glav">
+				<div id="chart">
+					<table cellpadding="5">
+						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_146')">
+							<td>1</td>
+							<td><img src="misc/146.jpg" height="50px"></td>
+							<td>
+								Казах
+								<figcaption id="albumcap">SALTY THROUGH THE VEINS</figcaption>
+							</td>
+						</tr>
+						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_110')">
+							<td>2</td>
+							<td><img src="misc/110.jpg" height="50px"></td>
+							<td>
+								Натура
+								<figcaption id="albumcap">Натура - Single</figcaption>
+							</td>
+						</tr>
+						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_113')">
+							<td>3</td>
+							<td><img src="misc/113.jpg" height="50px"></td>
+							<td>
+								Новый мерч
+								<figcaption id="albumcap">Новый мерч - Single</figcaption>
+							</td>
+						</tr>
+						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_104')">
+							<td>4</td>
+							<td><img src="misc/104.jpg" height="50px"></td>
+							<td>
+								Хрусталь
+								<figcaption id="albumcap">Хрусталь - Single</figcaption>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="thumb2" id="lastest">
+					<p id="laast">Последний релиз</p>
+					<a href="https://vk.com/music/playlist/-190544150_113" target="_blank"><figure class="signmain">
+						<img src="misc/113.jpg">
+						<div class="descr">
+							<figcaption class="date">11-12-2020</figcaption>
+							<figcaption class="title">Новый мерч</figcaption>
+							<figcaption class="desc">Сингл</figcaption>
+						</div>
+					</figure></a>
+				</div>
 			</div>
 			<!-- АЛЬБОМЫ -->
 			<!-- АЛЬБОМЫ -->
@@ -68,15 +90,22 @@
 			<!-- Синглы -->
 			<!-- Синглы -->
 			<div class="thumb" id="singles" style="display: none;">
-			   <a href="https://vk.com/music/playlist/-190544150_113" target="_blank"><figure class="sign">
-				   <img src="misc/113.jpg">
-				   <figcaption>Новый мерч</figcaption>
-			   </figure></a>
-			   <!-- Разделитель -->
-			   <a href="https://vk.com/music/playlist/-190544150_110" target="_blank"><figure class="sign">
-				   <img src="misc/110.jpg">
-				   <figcaption>Натура</figcaption>
-			   </figure></a>
+				<a href="https://vk.com/music/playlist/-190544150_113" target="_blank"><figure class="sign">
+					<img src="misc/113.jpg">
+					<figcaption>Новый мерч</figcaption>
+				</figure></a>
+				<!-- Разделитель -->
+				<a href="https://vk.com/music/playlist/-190544150_110" target="_blank"><figure class="sign">
+					<img src="misc/110.jpg">
+					<figcaption>Натура</figcaption>
+				</figure></a>
+			</div>
+			<!-- Сборники -->
+			<!-- Сборники -->
+			<!-- Сборники -->
+			<!-- Сборники -->
+			<!-- Сборники -->
+			<div class="thumb" id="comp" style="display: none;">
 			</div>
 			<!-- Участие -->
 			<!-- Участие -->
@@ -85,19 +114,19 @@
 			<!-- Участие -->
 			<div class="thumb" id="part" style="display: none;">
 				<table width="790px" cellpadding="5" style="margin: 0;">
-					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_172')">
-					 <td><img src="misc/172.jpg" height="80px"></td>
-					 <td>
-						Казах
-						<figcaption id="subartist">Радмила Павлова</figcaption>
-					 </td>
+					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_146')">
+						<td><img src="misc/146.jpg" height="80px"></td>
+						<td>
+							Казах
+							<figcaption id="subartist">Радмила Павлова</figcaption>
+						</td>
 					</tr>
 					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_104')">
-					 <td><img src="misc/104.jpg" height="80px"></td>
-					 <td>
-						Хрусталь
-						<figcaption id="subartist">JAMONMEAT</figcaption>
-					 </td>
+						<td><img src="misc/104.jpg" height="80px"></td>
+						<td>
+							Хрусталь
+							<figcaption id="subartist">JAMONMEAT</figcaption>
+						</td>
 					</tr>
 				 </table>
 			</div>

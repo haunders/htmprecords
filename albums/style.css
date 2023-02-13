@@ -1,0 +1,197 @@
+@media (max-device-width: 700px) {
+	#album_title {
+		margin: 20px 0 0 0!important;
+		flex-direction: column!important;
+		text-align: center!important;
+	}
+	#album_desc {
+		margin: 15px 0 0 0!important;
+	}
+	#album_desc p {
+		margin: 5px 0 0 0!important;
+	}
+	.track_album td {
+		max-width: 700px!important;
+	}
+	#album_desc .listen {
+		font-size: 28px!important;
+		width: 160px!important;
+		height: 50px!important;
+	}
+	#album_desc .title {
+		font-size: 50px!important;
+	}
+	#album_desc .artist {
+		font-size: 38px!important;
+	}
+	#cover_art_title img {
+		width: 400px!important;
+	}
+	#album_desc .date {
+		font-size: 28px!important;
+	}
+	#album_body {
+		padding: 30px!important;
+	}
+	#tracklist .info {
+		font-size: 25px!important;
+	}
+	#versions #title {
+		font-size: 35px!important;
+	}
+	.sign_album {
+		height: 396px!important;
+		width: 255px!important;
+	}
+	.sign_album img {
+		width: 252px!important;
+		margin-bottom: 15px!important;
+	}
+	.sign_album figcaption {
+		font-size: 27px!important;
+	}
+	.promo {
+		font-size: 15px!important;
+	}
+}
+#album_body {
+	padding: 40px 20px 0 50px;
+	background-color: #181818;
+}
+#album_title {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: stretch;
+}
+#cover_art_title img {
+	width: 250px;
+	box-shadow:0 0 3px #000;
+}
+#album_desc {
+	margin: 0 0 0 20px;
+}
+#album_desc a {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+    overflow: hidden;
+	max-width: 880px;
+}
+#album_desc .title {
+	margin: 70px 0 5px 0;
+	color: #fff;
+	font-family: 'Trebuchet MS';
+	font-weight: bold;
+	font-size: 40px;
+}
+#album_desc .artist {
+	color: #fff;
+	font-family: 'Trebuchet MS';
+	font-weight: bold;
+	font-size: 18px;
+}
+#album_desc .date {
+	margin: 20px 0 0 0;
+	color: #ddd;
+	font-family: 'Trebuchet MS';
+	font-weight: 600;
+	font-size: 12px;
+}
+#album_desc .listen {
+	border-radius: 10px;
+	display: inline-block;
+	background: #181818;
+	border: 3px solid white;
+	margin: 20px 0 0 0;
+	color: #fff;
+	font-family: 'Trebuchet MS';
+	font-weight: 600;
+	font-size: 14px;
+	width: 100px;
+	transition: 0.2s;
+}
+#album_desc .listen:hover {
+	transform: scale(1.05);
+	cursor:pointer
+}
+#tracklist table {
+	margin: 20px 0 20px 0;
+	width: 96%;
+}
+#tracklist .info {
+	color: #ccc;
+	font-family: 'Arial';
+	font-size: 13px;
+}
+.track_album td {
+	color: white;
+	font-family: 'Arial';
+	font-weight: 500;
+	font-size: 15px;
+	max-width: 1200px;
+	white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 8px;
+}
+.track_album tr:hover {
+	background: #000;
+	cursor: default;
+}
+#inactive td {
+	color: #888;
+}
+#tracklist td:first-child {
+	width: 1%;
+}
+#album_list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: center;
+}
+#versions {
+	margin-top: 50px;
+}
+#versions #title {
+	color: #fff;
+	font-family: 'Arial';
+	font-weight: bold;
+	font-size: 21px;
+	margin-bottom: 10px;
+}
+.sign_album {
+	display: inline-block;
+	border-radius: 5px;
+	padding: 16px;
+	margin: 5px;
+	background: #242424;
+	height: 220px;
+	width: 142px;
+}
+.sign_album:hover {
+	background: #363636;
+	cursor:pointer
+}
+.sign_album img {
+	width: 140px;
+	box-shadow:0 0 3px #000;
+}
+.sign_album figcaption {
+	margin: 7px 0 0 0;
+	color: white;
+	font-family: 'Arial';
+	font-weight: 600;
+	font-size: 13px;
+	-webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.promo {
+	color: #bbb;
+	font-family: 'Arial';
+	font-weight: 600;
+	font-size: 10px;
+}

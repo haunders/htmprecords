@@ -1,10 +1,10 @@
 function removeAll() {
-	document.getElementById('chart').style.display = "none"
+	document.getElementById('glav').style.display = "none"
 	document.getElementById('albums').style.display = "none"
 	document.getElementById('ep').style.display = "none"
 	document.getElementById('singles').style.display = "none"
+	document.getElementById('comp').style.display = "none"
 	document.getElementById('part').style.display = "none"
-	document.getElementById('bg').style.display = "none"
 }
 function changePage(select) {
 	var i = select.options[select.selectedIndex];
@@ -24,10 +24,13 @@ function changePage(select) {
 		removeAll()
 		document.getElementById('part').style.display = "flex"
 	}
+	else if (i.value == "Сборники") {
+		removeAll()
+		document.getElementById('comp').style.display = "flex"
+	}
 	else if (i.value == "Популярные треки") {
 		removeAll()
-		document.getElementById('chart').style.display = "flex"
-		document.getElementById('bg').style.display = "block"
+		document.getElementById('glav').style.display = "flex"
 	}
 	else {
 		removeAll()
