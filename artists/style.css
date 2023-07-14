@@ -177,6 +177,7 @@ select:hover {
 }
 .thumb {
 	margin-top: 10px; 
+	overflow: hidden;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
