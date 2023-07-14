@@ -123,6 +123,11 @@
 	font-family: 'Arial';
 	font-size: 13px;
 }
+.track_performer {
+	margin: 0;
+	color: #9a9a9a;
+	font-size: 12px;
+}
 .track_album td {
 	color: white;
 	font-family: 'Arial';
@@ -139,7 +144,7 @@
 	cursor: default;
 }
 #inactive td {
-	color: #888;
+	color: #9a9a9a;
 }
 #tracklist td:first-child {
 	width: 1%;
