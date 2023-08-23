@@ -9,6 +9,34 @@ url('font/BebasNeueBold.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
 }
+@media (max-width: 1300px) {
+	.release {
+		width: 13.1%!important;
+	}
+}
+@media (max-width: 1150px) {
+	.release {
+		width: 13%!important;
+	}
+}
+@media (max-width: 1060px) {
+	.release {
+		width: 15%!important;
+		height: 220px!important;
+	}
+}
+@media (max-width: 850px) {
+	.release {
+		width: 18%!important;
+		height: 220px!important;
+	}
+}
+@media (max-width: 700px) {
+	.release {
+		width: 30%!important;
+		height: 280px!important;
+	}
+}
 @media (max-device-width: 700px) {
 	.bg {bottom:0; height: 55%!important;}
 	table {width: 100%!important;}
@@ -34,6 +62,14 @@ font-style: normal;
 	td {max-width: 750px!important;}
 	#albumcap {font-size: 21px!important;}
 	#subartist {font-size: 25px!important;}
+	.release {width: 30%!important; height: 440px!important;}
+	.release_title {font-size: 160%!important;}
+}
+@media (max-width: 400px) {
+	.release {
+		width: 43%!important;
+		height: 240px!important;
+	}
 }
 ::-webkit-scrollbar {
   width: 0;
@@ -336,4 +372,35 @@ ul{
 	width: 200px;
 	height:100px;
 	margin: -200px 0 0 -100px;
+}
+
+.releases {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.release {
+	width: 13.3%;
+	display: inline-block;
+	margin: 5px;
+	box-sizing: border-box;
+    position: relative;
+	border-radius: 5px;
+	padding: 16px;
+	background: #181818;
+	height: 280px;
+}
+.release_cover img {
+	width: 100%;
+}
+.release_title {
+	color: white;
+	font-family: 'Arial';
+	font-weight: 600;
+	font-size: 90%;
+	margin-top: 4%;
+}
+.release:hover {
+	background: #363636;
+	cursor:pointer
 }
