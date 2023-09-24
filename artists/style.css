@@ -373,34 +373,3 @@ ul{
 	height:100px;
 	margin: -200px 0 0 -100px;
 }
-
-.releases {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-}
-.release {
-	width: 13.3%;
-	display: inline-block;
-	margin: 5px;
-	box-sizing: border-box;
-    position: relative;
-	border-radius: 5px;
-	padding: 16px;
-	background: #181818;
-	height: 280px;
-}
-.release_cover img {
-	width: 100%;
-}
-.release_title {
-	color: white;
-	font-family: 'Arial';
-	font-weight: 600;
-	font-size: 90%;
-	margin-top: 4%;
-}
-.release:hover {
-	background: #363636;
-	cursor:pointer
-}
