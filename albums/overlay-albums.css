@@ -142,7 +142,6 @@
 }
 .cover-art img:hover {
 	cursor: pointer;
-	filter: brightness(80%);
 }
 .album-desc {
 	margin: 0 0 0 25px;
