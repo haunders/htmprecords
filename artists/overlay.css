@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 * {
 	box-sizing: border-box;
 }
@@ -26,7 +26,7 @@ body {
 	font-weight: bold;
 	font-size: 16px;
 	color: #ffffff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
 	border-radius: 7px 7px 0 0;
 }
 .panel {
@@ -50,7 +50,7 @@ body {
 }
 .release-title {
 	color: white;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 80%;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -64,7 +64,7 @@ body {
 }
 .release-preorder {
 	color: rgb(199, 199, 199);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 70%;
 	font-weight: 600;
 	overflow: hidden;
@@ -82,7 +82,7 @@ body {
 }
 .performer {
 	color: rgb(199, 199, 199);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: 74%;
 }
 a {
@@ -266,7 +266,7 @@ table {
 	margin: 0;
 	width: 45%;
 	font-size: 14px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
 	border-collapse: collapse;
 }
 td {
@@ -311,7 +311,7 @@ tr:hover {
 }
 .latest-title {
 	color: #fff;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: bold;
 	font-size: 21px;
 	margin: 0 0 2px 5px;
@@ -338,7 +338,7 @@ tr:hover {
 .release-newest-description figcaption.title {
 	margin: 12px 0 0 20px;
 	color: white;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 600;
 	font-size: 19px;
 	-webkit-line-clamp: 1;
@@ -349,14 +349,14 @@ tr:hover {
 .release-newest-description figcaption.date {
 	margin: 15px 0 0 20px;
 	color: rgb(215, 215, 215);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	font-size: 11px;
 }
 .release-newest-description figcaption.desc {
 	margin: 5px 0 0 20px;
 	color: rgb(215, 215, 215);
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	font-size: 12px;
 }
