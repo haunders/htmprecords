@@ -3,28 +3,21 @@
 	<head>
 		<meta charset="utf=8">
 		<title>Zenia And The Diamonds</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 	</head>
-	<script src="script.js" type="text/javascript"></script>
-	<body id="ody">
-			<div class="memnu">
-				<select id="formm" onchange="changePage(this)">
-					<option selected="selected">Популярные треки</option>
-					<option>Альбомы</option>
-					<option>EP</option>
-					<option>Синглы</option>
-					<option>Участие в релизах</option>
-				</select>
-				<h2>Zenia And The Diamonds</h2></td>
+	<body>
+		<div class="tabs">
+			<div class="tabs-menu" aria-labelledby="tabs-title">
+				<a id="tab-1" href="#popular"><div class="label" id="lab-1">Популярные треки</div></a>
+				<a id="tab-2" href="#lp"><div class="label" id="lab-2">Альбомы</div></a>
+				<a id="tab-3" href="#ep"><div class="label" id="lab-3">EP</div></a>
+				<a id="tab-4" href="#singles"><div class="label" id="lab-4">Синглы</div></a>
+				<a id="tab-6" href="#featured"><div class="label" id="lab-6">Ещё с исполнителем</div></a>
 			</div>
-			<!-- ТОП -->
-			<!-- ТОП -->
-			<!-- ТОП -->
-			<!-- ТОП -->
-			<!-- ТОП -->
-			<div id="glav">
-				<div id="chart">
+			<div class="panel">
+				<div id="popular" class="releases-tab" aria-labelledby="tab-1">
 					<table cellpadding="5">
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_212')">
 							<td>1</td>
@@ -82,16 +75,8 @@
 								<figcaption id="albumcap">KOSISATO AYAKA</figcaption>
 							</td>
 						</tr>
-						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_281')">
-							<td>8</td>
-							<td><img src="misc/281.jpg" height="50px"></td>
-							<td>
-								Просто подпишись
-								<figcaption id="albumcap">Корекиё Шингуджи</figcaption>
-							</td>
-						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_222')">
-							<td>9</td>
+							<td>8</td>
 							<td><img src="misc/222.jpg" height="50px"></td>
 							<td>
 								diluc as a boyfriend
@@ -99,230 +84,183 @@
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_142')">
-							<td>10</td>
+							<td>9</td>
 							<td><img src="misc/142.jpg" height="50px"></td>
 							<td>
 								мотивационный пурдж зе пойзон ремикс
 								<figcaption id="albumcap">арина гланды</figcaption>
 							</td>
 						</tr>
+						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_281')">
+							<td>10</td>
+							<td><img src="misc/281.jpg" height="50px"></td>
+							<td>
+								Просто подпишись
+								<figcaption id="albumcap">Корекиё Шингуджи</figcaption>
+							</td>
+						</tr>
 					</table>
-				</div>
-				<div class="thumb2" id="lastest">
-					<div style="display: none;">
-						<p id="laast">Предзаказ</p>
-						<a href="../albums/korekie"><figure class="signmain">
-							<img src="../albums/img/korekie.png">
-							<div class="descr">
-								<figcaption class="date">2023</figcaption>
-								<figcaption class="title">Корекиё Шингуджи</figcaption>
-								<figcaption class="desc">Альбом</figcaption>
+					<div class="latest-release">
+						<div id="prerelease" hidden>
+							<script type="text/javascript">
+								var prelink = '../albums/ialya_dlx';
+							</script>
+							<p class="latest-title">Предзаказ</p>
+							<div class="release-newest">
+								<img src="../albums/img/ialya_dlx.png" onclick="window.location.href = prelink">
+								<div class="release-newest-description">
+									<figcaption class="date">2023</figcaption>
+									<figcaption class="title" onclick="window.location.href = prelink">I, Alya Bridge, have a dream (Deluxe)</figcaption>
+									<figcaption class="desc">Альбом</figcaption>
+								</div>
 							</div>
-						</figure></a>
-					</div>
-					<p id="laast">Последний релиз</p>
-					<a href="../albums/korekie"><figure class="signmain">
-						<img src="misc/281.jpg">
-						<div class="descr">
-							<figcaption class="date">02-08-2023</figcaption>
-							<figcaption class="title">Корекиё Шингуджи</figcaption>
-							<figcaption class="desc">Альбом</figcaption>
 						</div>
-					</figure></a>
+						<div id="latest">
+							<script type="text/javascript">
+								var link = '../albums/korekie';
+							</script>
+							<p class="latest-title">Последний релиз</p>
+							<div class="release-newest">
+								<img src="../albums/img/korekie.png" onclick="window.location.href = link">
+								<div class="release-newest-description">
+									<figcaption class="date">02-08-2023</figcaption>
+									<figcaption class="title" onclick="window.location.href = link">Корекиё Шингуджи</figcaption>
+									<figcaption class="desc">Альбом</figcaption>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="lp" class="releases-tab" aria-labelledby="tab-2">
+					<div class="release" onclick="window.location.href = '../albums/korekie'">
+						<img src="../albums/img/korekie.png">
+						<div class="release-title">Корекиё Шингуджи</div>
+					</div>
+					<div class="release" onclick="window.location.href = '../albums/kosisato_dlx'">
+						<img src="../albums/img/kosisato_dlx.png">
+						<div class="release-title">KOSISATO AYAKA (Deluxe Issue)</div>
+					</div>
+					<div class="release" onclick="window.location.href = '../albums/kosisato'">
+						<img src="../albums/img/kosisato.png">
+						<div class="release-title">KOSISATO AYAKA</div>
+					</div>
+					<div class="release" onclick="window.location.href = '../albums/arina'">
+						<img src="../albums/img/arina.png">
+						<div class="release-title">арина гланды</div>
+					</div>
+				</div>
+				<div id="ep" class="releases-tab" aria-labelledby="tab-3">
+					<div class="release" onclick="window.location.href = '../albums/kosisato_singles'">
+						<img src="../albums/img/kosisato_singles.png">
+						<div class="release-title">KOSISATO AYAKA (Singles Issue)</div>
+					</div>
+				</div>
+				<div id="singles" class="releases-tab" aria-labelledby="tab-4">
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_282')">
+						<img src="misc/282.jpg">
+						<div class="release-title">Подделка (Nu-Disco Remix)</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_280')">
+						<img src="misc/280.jpg">
+						<div class="release-title">Микан & Джунко на льду</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_278')">
+						<img src="misc/278.jpg">
+						<div class="release-title">Просто подпишись / Отчаянья не ждите</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_275')">
+						<img src="misc/275.jpg">
+						<div class="release-title">Айс</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_247')">
+						<img src="misc/247.jpg">
+						<div class="release-title">Эта рыба</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_239')">
+						<img src="misc/239.jpg">
+						<div class="release-title">Романтический мальчик</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_231')">
+						<img src="misc/231.jpg">
+						<div class="release-title">Корекиё Шингуджи</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_218')">
+						<img src="misc/218.jpg">
+						<div class="release-title">camilla cabello diss</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_213')">
+						<img src="misc/213.jpg">
+						<div class="release-title">sucker cabbage head</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_210')">
+						<img src="misc/210.jpg">
+						<div class="release-title">chanel & gucci</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_207')">
+						<img src="misc/207.jpg">
+						<div class="release-title">million dollar milka</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_204')">
+						<img src="misc/204.jpg">
+						<div class="release-title">hudshee tselomudrie (so vremyon malenkogo)</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_173')">
+						<img src="misc/173.jpg">
+						<div class="release-title">Косисато Аяка</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_198')">
+						<img src="misc/198.jpg">
+						<div class="release-title">дилюк ухажёр (от кэйи ушёл)</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_151')">
+						<img src="misc/151.jpg">
+						<div class="release-title">sausage</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_141')">
+						<img src="misc/141.jpg">
+						<div class="release-title">трагичный анус флай треп</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_140')">
+						<img src="misc/140.jpg">
+						<div class="release-title">комме дес дазай (лайк зе рюк)</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_139')">
+						<img src="misc/139.jpg">
+						<div class="release-title">эношима дримс ин э мондштат ленд</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_121')">
+						<img src="misc/121.jpg">
+						<div class="release-title">мотивационный пурдж зе пойзон ремикс</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_116')">
+						<img src="misc/116.jpg">
+						<div class="release-title">мотивационный пурдж зе пойзон</div>
+					</div>
+				</div>
+				<div id="featured" class="releases-tab" aria-labelledby="tab-6">
+					<div class="release">
+						<img src="misc/253.jpg" onclick="window.open('https://vk.com/music/playlist/-190544150_253')">
+						<div class="release-title" onclick="window.open('https://vk.com/music/playlist/-190544150_253')">colLABoratory</div>
+						<div class="performer"><a href="bridge">Bridge</a></div>
+					</div>
+					<div class="release">
+						<img src="misc/242.jpg" onclick="window.open('https://vk.com/music/playlist/-190544150_242')">
+						<div class="release-title" onclick="window.open('https://vk.com/music/playlist/-190544150_242')">Зеркало сознания</div>
+						<div class="performer"><a href="masura">Masura Tyler</a></div>
+					</div>
+					<div class="release">
+						<img src="misc/171.jpg" onclick="window.open('https://vk.com/music/playlist/-190544150_171')">
+						<div class="release-title" onclick="window.open('https://vk.com/music/playlist/-190544150_171')">Край утопии</div>
+						<div class="performer"><a href="elena">Елена Восточная</a></div>
+					</div>
+					<div class="release">
+						<img src="misc/170.jpg" onclick="window.open('https://vk.com/music/playlist/-190544150_170')">
+						<div class="release-title" onclick="window.open('https://vk.com/music/playlist/-190544150_170')">It's A Lie - Remix Bundle</div>
+						<div class="performer"><a href="jamonmeat">JAMONMEAT</a></div>
+					</div>
 				</div>
 			</div>
-			<!-- АЛЬБОМЫ -->
-			<!-- АЛЬБОМЫ -->
-			<!-- АЛЬБОМЫ -->
-			<!-- АЛЬБОМЫ -->
-			<!-- АЛЬБОМЫ -->
-			<div class="thumb" id="albums" style="display: none;">
-				<a href="../albums/korekie"><figure class="sign">
-					<img src="misc/281.jpg">
-					<figcaption>Корекиё Шингуджи</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="../albums/kosisato_dlx"><figure class="sign">
-					<img src="misc/222.jpg">
-					<figcaption>KOSISATO AYAKA (Deluxe Issue)</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="../albums/kosisato"><figure class="sign">
-					<img src="misc/212.jpg">
-					<figcaption>KOSISATO AYAKA</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="../albums/arina"><figure class="sign">
-					<img src="misc/142.jpg">
-					<figcaption>ариана гланды</figcaption>
-				</figure></a>
-			</div>
-			<!-- EP -->
-			<!-- EP -->
-			<!-- EP -->
-			<!-- EP -->
-			<!-- EP -->
-			<div class="thumb" id="ep" style="display: none;">
-				<a href="../albums/kosisato_singles"><figure class="sign">
-					<img src="misc/214.jpg">
-					<figcaption>KOSISATO AYAKA (Singles Issue)</figcaption>
-				</figure></a>
-			</div>
-			<!-- Синглы -->
-			<!-- Синглы -->
-			<!-- Синглы -->
-			<!-- Синглы -->
-			<!-- Синглы -->
-			<div class="thumb" id="singles" style="display: none;">
-				<a href="https://vk.com/music/playlist/-190544150_280" target="_blank"><figure class="sign">
-					<img src="misc/280.jpg">
-					<figcaption>Микан & Джунко на льду</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_278" target="_blank"><figure class="sign">
-					<img src="misc/278.jpg">
-					<figcaption>Просто подпишись / Отчаянья не ждите</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_275" target="_blank"><figure class="sign">
-					<img src="misc/275.jpg">
-					<figcaption>Айс</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_247" target="_blank"><figure class="sign">
-					<img src="misc/247.jpg">
-					<figcaption>Эта рыба</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_239" target="_blank"><figure class="sign">
-					<img src="misc/239.jpg">
-					<figcaption>Романтический мальчик</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_231" target="_blank"><figure class="sign">
-					<img src="misc/231.jpg">
-					<figcaption>Корекиё Шингуджи</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_218" target="_blank"><figure class="sign">
-					<img src="misc/218.jpg">
-					<figcaption>camilla cabello diss</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_213" target="_blank"><figure class="sign">
-					<img src="misc/213.jpg">
-					<figcaption>sucker cabbage head</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_210" target="_blank"><figure class="sign">
-					<img src="misc/210.jpg">
-					<figcaption>chanel & gucci</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_207" target="_blank"><figure class="sign">
-					<img src="misc/207.jpg">
-					<figcaption>million dollar milka</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_204" target="_blank"><figure class="sign">
-					<img src="misc/204.jpg">
-					<figcaption>hudshee tselomudrie (so vremyon malenkogo)</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_173" target="_blank"><figure class="sign">
-					<img src="misc/173.jpg">
-					<figcaption>Косисато Аяка</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_141" target="_blank"><figure class="sign">
-					<img src="misc/141.jpg">
-					<figcaption>трагичный анус флай треп</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_140" target="_blank"><figure class="sign">
-					<img src="misc/140.jpg">
-					<figcaption>комме дес дазай (лайк зе рюк)</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_139" target="_blank"><figure class="sign">
-					<img src="misc/139.jpg">
-					<figcaption>эношима дримс ин э мондштат ленд</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_121" target="_blank"><figure class="sign">
-					<img src="misc/121.jpg">
-					<figcaption>мотивационный пурдж зе пойзон ремикс</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_116" target="_blank"><figure class="sign">
-					<img src="misc/116.jpg">
-					<figcaption>мотивационный пурдж зе пойзон</figcaption>
-				</figure></a>
-			</div>
-			<!-- Сборники -->
-			<!-- Сборники -->
-			<!-- Сборники -->
-			<!-- Сборники -->
-			<!-- Сборники -->
-			<div class="thumb" id="comp" style="display: none;">
-			</div>
-			<!-- Участие -->
-			<!-- Участие -->
-			<!-- Участие -->
-			<!-- Участие -->
-			<!-- Участие -->
-			<div class="thumb" id="part" style="display: none;">
-				<table width="790px" cellpadding="5" style="margin: 0;">
-					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_253')">
-						<td><img src="misc/253.jpg" height="60px"></td>
-						<td>
-							Anonymous B&Z / Francis with Parrot
-							<figcaption id="subartist">Bridge</figcaption>
-						</td>
-					</tr>
-					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_242')">
-						<td><img src="misc/242.jpg" height="60px"></td>
-						<td>
-							Стрелы
-							<figcaption id="subartist">Masura Tyler</figcaption>
-						</td>
-					</tr>
-					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_216')">
-						<td><img src="misc/216.jpg" height="60px"></td>
-						<td>
-							дилюк ухажёр (от кэйи ушёл)
-							<figcaption id="subartist">чесночная блядина</figcaption>
-						</td>
-					</tr>
-					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_171')">
-						<td><img src="misc/171.jpg" height="60px"></td>
-						<td>
-							Маша
-							<figcaption id="subartist">Елена Восточная</figcaption>
-						</td>
-					</tr>
-					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_171')">
-						<td><img src="misc/171.jpg" height="60px"></td>
-						<td>
-							Пыль (megamix)
-							<figcaption id="subartist">Елена Восточная</figcaption>
-						</td>
-					</tr>
-					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_170')">
-						<td><img src="misc/170.jpg" height="60px"></td>
-						<td>
-							It's A Lie (Zenia And The Diamonds Version)
-							<figcaption id="subartist">JAMONMEAT</figcaption>
-						</td>
-					</tr>
-					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_152')">
-						<td><img src="misc/152.jpg" height="60px"></td>
-						<td>
-							sausage
-							<figcaption id="subartist">princess livi</figcaption>
-						</td>
-					</tr>
-				 </table>
-			</div>
+		  </div>
 	</body>
+	<script src="actions.js" type="text/javascript"></script>
 </html>

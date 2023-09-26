@@ -3,28 +3,21 @@
 	<head>
 		<meta charset="utf=8">
 		<title>Люба и невероятные</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 	</head>
-	<script src="script.js" type="text/javascript"></script>
-	<body id="ody">
-			<div class="memnu">
-				<select id="formm" onchange="changePage(this)">
-					<option selected="selected">Популярные треки</option>
-					<option>Альбомы</option>
-					<option>EP</option>
-					<option>Синглы</option>
-					<option>Участие в релизах</option>
-				</select>
-				<h2>Люба и невероятные</h2></td>
+	<body>
+		<div class="tabs">
+			<div class="tabs-menu" aria-labelledby="tabs-title">
+				<a id="tab-1" href="#popular"><div class="label" id="lab-1">Популярные треки</div></a>
+				<a id="tab-2" href="#lp"><div class="label" id="lab-2">Альбомы</div></a>
+				<a id="tab-3" href="#ep"><div class="label" id="lab-3">EP</div></a>
+				<a id="tab-4" href="#singles"><div class="label" id="lab-4">Синглы</div></a>
+				<a id="tab-6" href="#featured"><div class="label" id="lab-6">Ещё с исполнителем</div></a>
 			</div>
-			<!-- ТОП -->
-			<!-- ТОП -->
-			<!-- ТОП -->
-			<!-- ТОП -->
-			<!-- ТОП -->
-			<div id="glav">
-				<div id="chart">
+			<div class="panel">
+				<div id="popular" class="releases-tab" aria-labelledby="tab-1">
 					<table cellpadding="5">
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_174')">
 							<td>1</td>
@@ -34,8 +27,16 @@
 								<figcaption id="albumcap">Вечное искусство</figcaption>
 							</td>
 						</tr>
-						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_152')">
+						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_300')">
 							<td>2</td>
+							<td><img src="misc/300.jpg" height="50px"></td>
+							<td>
+								Солти Ментал
+								<figcaption id="albumcap">Солти Ментал - Single</figcaption>
+							</td>
+						</tr>
+						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_152')">
+							<td>3</td>
 							<td><img src="misc/152.jpg" height="50px"></td>
 							<td>
 								megamind
@@ -43,7 +44,7 @@
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_168')">
-							<td>3</td>
+							<td>4</td>
 							<td><img src="misc/168.jpg" height="50px"></td>
 							<td>
 								It's A Lie
@@ -51,7 +52,7 @@
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_114')">
-							<td>4</td>
+							<td>5</td>
 							<td><img src="misc/114.jpg" height="50px"></td>
 							<td>
 								ВПИТД
@@ -59,7 +60,7 @@
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_114')">
-							<td>5</td>
+							<td>6</td>
 							<td><img src="misc/114.jpg" height="50px"></td>
 							<td>
 								Век бурления
@@ -67,7 +68,7 @@
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_156')">
-							<td>6</td>
+							<td>7</td>
 							<td><img src="misc/156.jpg" height="50px"></td>
 							<td>
 								Дверь
@@ -75,7 +76,7 @@
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_143')">
-							<td>7</td>
+							<td>8</td>
 							<td><img src="misc/143.jpg" height="50px"></td>
 							<td>
 								Частушки HTMP
@@ -83,7 +84,7 @@
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_127')">
-							<td>8</td>
+							<td>9</td>
 							<td><img src="misc/127.jpg" height="50px"></td>
 							<td>
 								Хакуша
@@ -91,127 +92,104 @@
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_147')">
-							<td>9</td>
+							<td>10</td>
 							<td><img src="misc/147.jpg" height="50px"></td>
 							<td>
 								S♂CUM♂RIM
 								<figcaption id="albumcap">SCUMRIM - Single</figcaption>
 							</td>
 						</tr>
-						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_127')">
-							<td>10</td>
-							<td><img src="misc/127.jpg" height="50px"></td>
-							<td>
-								Похуй, пляшем
-								<figcaption id="albumcap">SALTY MENTAL - EP</figcaption>
-							</td>
-						</tr>
 					</table>
-				</div>
-				<div class="thumb2" id="lastest">
-					<p id="laast">Последний релиз</p>
-					<a href="../albums/vechnoe"><figure class="signmain">
-						<img src="misc/174.jpg">
-						<div class="descr">
-							<figcaption class="date">22-11-2022</figcaption>
-							<figcaption class="title">Вечное искусство</figcaption>
-							<figcaption class="desc">Альбом</figcaption>
+					<div class="latest-release">
+						<div id="prerelease" hidden>
+							<script type="text/javascript">
+								var prelink = '../albums/ialya_dlx';
+							</script>
+							<p class="latest-title">Предзаказ</p>
+							<div class="release-newest">
+								<img src="../albums/img/ialya_dlx.png" onclick="window.location.href = prelink">
+								<div class="release-newest-description">
+									<figcaption class="date">2023</figcaption>
+									<figcaption class="title" onclick="window.location.href = prelink">I, Alya Bridge, have a dream (Deluxe)</figcaption>
+									<figcaption class="desc">Альбом</figcaption>
+								</div>
+							</div>
 						</div>
-					</figure></a>
+						<div id="latest">
+							<script type="text/javascript">
+								var link = 'https://vk.com/music/playlist/-190544150_300';
+							</script>
+							<p class="latest-title">Последний релиз</p>
+							<div class="release-newest">
+								<img src="misc/300.jpg" onclick="window.location.href = link">
+								<div class="release-newest-description">
+									<figcaption class="date">26-09-2023</figcaption>
+									<figcaption class="title" onclick="window.location.href = link">Солти Ментал</figcaption>
+									<figcaption class="desc">Сингл</figcaption>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="lp" class="releases-tab" aria-labelledby="tab-2">
+					<div class="release" onclick="window.location.href = '../albums/vechnoe'">
+						<img src="../albums/img/vechnoe.png">
+						<div class="release-title">Вечное искусство</div>
+					</div>
+					<div class="release" onclick="window.location.href = '../albums/race'">
+						<img src="../albums/img/race.png">
+						<div class="release-title">Рейс Нью-Йорк - Махачкала</div>
+					</div>
+				</div>
+				<div id="ep" class="releases-tab" aria-labelledby="tab-3">
+					<div class="release" onclick="window.location.href = '../albums/saltymental'">
+						<img src="../albums/img/saltymental.png">
+						<div class="release-title">SALTY MENTAL</div>
+					</div>
+					<div class="release" onclick="window.location.href = '../albums/proba'">
+						<img src="../albums/img/proba.png">
+						<div class="release-title">Проба гелевой ручки</div>
+					</div>
+				</div>
+				<div id="singles" class="releases-tab" aria-labelledby="tab-4">
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_300')">
+						<img src="misc/300.jpg">
+						<div class="release-title">Солти Ментал</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_267')">
+						<img src="misc/267.jpg">
+						<div class="release-title">Самая тёжелая песня..... никто не поймет...</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_156')">
+						<img src="misc/156.jpg">
+						<div class="release-title">Дверь</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_150')">
+						<img src="misc/150.jpg">
+						<div class="release-title">megamind</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_147')">
+						<img src="misc/147.jpg">
+						<div class="release-title">SCUMRIM</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_137')">
+						<img src="misc/137.jpg">
+						<div class="release-title">Хейтклаб Юи Таканаси</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_123')">
+						<img src="misc/123.jpg">
+						<div class="release-title">Частушки HTMP</div>
+					</div>
+				</div>
+				<div id="featured" class="releases-tab" aria-labelledby="tab-6">
+					<div class="release">
+						<img src="misc/168.jpg" onclick="window.open('https://vk.com/music/playlist/-190544150_168')">
+						<div class="release-title" onclick="window.open('https://vk.com/music/playlist/-190544150_168')">It's A Lie</div>
+						<div class="performer"><a href="jamonmeat">JAMONMEAT</a></div>
+					</div>
 				</div>
 			</div>
-			<!-- АЛЬБОМЫ -->
-			<!-- АЛЬБОМЫ -->
-			<!-- АЛЬБОМЫ -->
-			<!-- АЛЬБОМЫ -->
-			<!-- АЛЬБОМЫ -->
-			<div class="thumb" id="albums" style="display: none;">
-				<a href="../albums/vechnoe"><figure class="sign">
-					<img src="misc/174.jpg">
-					<figcaption>Вечное искусство</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="../albums/race"><figure class="sign">
-					<img src="misc/143.jpg">
-					<figcaption>Рейс Нью-Йорк - Махачкала</figcaption>
-				</figure></a>
-			</div>
-			<!-- EP -->
-			<!-- EP -->
-			<!-- EP -->
-			<!-- EP -->
-			<!-- EP -->
-			<div class="thumb" id="ep" style="display: none;">
-				<a href="../albums/saltymental"><figure class="sign">
-					<img src="misc/127.jpg">
-					<figcaption>SALTY MENTAL</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="../albums/proba"><figure class="sign">
-					<img src="misc/114.jpg">
-					<figcaption>Проба гелевой ручки</figcaption>
-				</figure></a>
-			</div>
-			<!-- Синглы -->
-			<!-- Синглы -->
-			<!-- Синглы -->
-			<!-- Синглы -->
-			<!-- Синглы -->
-			<div class="thumb" id="singles" style="display: none;">
-				<a href="https://vk.com/music/playlist/-190544150_267" target="_blank"><figure class="sign">
-					<img src="misc/267.jpg">
-					<figcaption>Самая тёжелая песня в мире..... никто не поймет...</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_156" target="_blank"><figure class="sign">
-					<img src="misc/156.jpg">
-					<figcaption>Дверь</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_147" target="_blank"><figure class="sign">
-					<img src="misc/147.jpg">
-					<figcaption>SCUMRIM</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-				<a href="https://vk.com/music/playlist/-190544150_137" target="_blank"><figure class="sign">
-					<img src="misc/137.jpg">
-					<figcaption>Хейтклаб Юи Таканаси</figcaption>
-				</figure></a>
-				<!-- Разделитель -->
-			   <a href="https://vk.com/music/playlist/-190544150_123" target="_blank"><figure class="sign">
-				   <img src="misc/123.jpg">
-				   <figcaption>Частушки HTMP</figcaption>
-			   </figure></a>
-			</div>
-			<!-- Сборники -->
-			<!-- Сборники -->
-			<!-- Сборники -->
-			<!-- Сборники -->
-			<!-- Сборники -->
-			<div class="thumb" id="comp" style="display: none;">
-			</div>
-			<!-- Участие -->
-			<!-- Участие -->
-			<!-- Участие -->
-			<!-- Участие -->
-			<!-- Участие -->
-			<div class="thumb" id="part" style="display: none;">
-				<table width="790px" cellpadding="5" style="margin: 0;">
-					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_170')">
-						<td><img src="misc/170.jpg" height="60px"></td>
-						<td>
-							It's A Lie
-							<figcaption id="subartist">JAMONMEAT</figcaption>
-						</td>
-					</tr>
-					<tr onclick="window.open('https://vk.com/music/playlist/-190544150_152')">
-						<td><img src="misc/152.jpg" height="60px"></td>
-						<td>
-							megamind
-							<figcaption id="subartist">princess livi</figcaption>
-						</td>
-					</tr>
-				</table>
-			</div>
+		  </div>
 	</body>
+	<script src="actions.js" type="text/javascript"></script>
 </html>
