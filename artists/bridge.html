@@ -20,20 +20,20 @@
 			<div class="panel">
 				<div id="popular" class="releases-tab" aria-labelledby="tab-1">
 					<table cellpadding="5">
-						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_291')">
+						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_302')">
 							<td>1</td>
+							<td><img src="misc/302.jpg" height="50px"></td>
+							<td>
+								Whoosh (Ur Lesbian)
+								<figcaption id="albumcap">I, Alya Bridge, have a dream (Deluxe)</figcaption>
+							</td>
+						</tr>
+						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_291')">
+							<td>2</td>
 							<td><img src="misc/291.jpg" height="50px"></td>
 							<td>
 								That's Ready
 								<figcaption id="albumcap">I, Alya Bridge, have a dream</figcaption>
-							</td>
-						</tr>
-						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_299')">
-							<td>2</td>
-							<td><img src="misc/299.jpg" height="50px"></td>
-							<td>
-								Whoosh (Ur Lesbian)
-								<figcaption id="albumcap">Whoosh (Ur Lesbian) - Single</figcaption>
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_253')">
@@ -60,8 +60,16 @@
 								<figcaption id="albumcap">Question Your Existence (Deluxe) - EP</figcaption>
 							</td>
 						</tr>
-						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_291')">
+						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_302')">
 							<td>6</td>
+							<td><img src="misc/302.jpg" height="50px"></td>
+							<td>
+								Shrimp Roll
+								<figcaption id="albumcap">I, Alya Bridge, have a dream (Deluxe)</figcaption>
+							</td>
+						</tr>
+						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_291')">
+							<td>7</td>
 							<td><img src="misc/291.jpg" height="50px"></td>
 							<td>
 								Great Children War
@@ -69,7 +77,7 @@
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_291')">
-							<td>7</td>
+							<td>8</td>
 							<td><img src="misc/291.jpg" height="50px"></td>
 							<td>
 								Muhteşem Yüzyıl
@@ -77,7 +85,7 @@
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_291')">
-							<td>8</td>
+							<td>9</td>
 							<td><img src="misc/291.jpg" height="50px"></td>
 							<td>
 								What Should I Start With?
@@ -85,24 +93,16 @@
 							</td>
 						</tr>
 						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_233')">
-							<td>9</td>
+							<td>10</td>
 							<td><img src="misc/233.jpg" height="50px"></td>
 							<td>
 								Malibu
 								<figcaption id="albumcap">Question Your Existence - EP</figcaption>
 							</td>
 						</tr>
-						<tr onclick="window.open('https://vk.com/music/playlist/-190544150_291')">
-							<td>10</td>
-							<td><img src="misc/291.jpg" height="50px"></td>
-							<td>
-								Elites Are Serving
-								<figcaption id="albumcap">I, Alya Bridge, have a dream</figcaption>
-							</td>
-						</tr>
 					</table>
 					<div class="latest-release">
-						<div id="prerelease">
+						<div id="prerelease" hidden>
 							<script type="text/javascript">
 								var prelink = '../albums/ialya_dlx';
 							</script>
@@ -118,15 +118,15 @@
 						</div>
 						<div id="latest">
 							<script type="text/javascript">
-								var link = 'https://vk.com/music/playlist/-190544150_299';
+								var link = '../albums/ialya_dlx';
 							</script>
 							<p class="latest-title">Последний релиз</p>
 							<div class="release-newest">
-								<img src="misc/299.jpg" onclick="window.open(link)">
+								<img src="../albums/img/ialya_dlx.png" onclick="window.location.href = link">
 								<div class="release-newest-description">
-									<figcaption class="date">22-09-2023</figcaption>
-									<figcaption class="title" onclick="window.open(link)">Whoosh (Ur Lesbian)</figcaption>
-									<figcaption class="desc">Сингл</figcaption>
+									<figcaption class="date">17-10-2023</figcaption>
+									<figcaption class="title" onclick="window.location.href = link">I, Alya Bridge, have a dream (Deluxe)</figcaption>
+									<figcaption class="desc">Альбом</figcaption>
 								</div>
 							</div>
 						</div>
@@ -136,7 +136,6 @@
 					<div class="release" onclick="window.location.href = '../albums/ialya_dlx'">
 						<img src="../albums/img/ialya_dlx.png">
 						<div class="release-title">I, Alya Bridge, have a dream (Deluxe)</div>
-						<div class="release-preorder">ПРЕДРЕЛИЗ</div>
 					</div>
 					<div class="release" onclick="window.location.href = '../albums/ialya'">
 						<img src="../albums/img/ialya.png">
@@ -162,6 +161,10 @@
 					</div>
 				</div>
 				<div id="singles" class="releases-tab" aria-labelledby="tab-4">
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_301')">
+						<img src="misc/301.jpg">
+						<div class="release-title">Shrimp Roll</div>
+					</div>
 					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_299')">
 						<img src="misc/299.jpg">
 						<div class="release-title">Whoosh (Ur Lesbian)</div>
