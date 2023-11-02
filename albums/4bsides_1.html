@@ -3,103 +3,100 @@
 	<head>
 		<meta charset="utf=8">
 		<title>4B-Sides, Vol. 1</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/4bsides_1.png"></div>
-				<div id="album_desc">
-					<p class="title">4B-Sides, Vol. 1</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/4bsides_1.png" class="cover" data-original="img/4bsides_1.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name"></p>
 					<a href="../artists/blyadina" class="artist">чесночная блядина</a>
 					<p class="date">05.03.2023</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_224')">Слушать</button>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_224')">▶</button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
 						<td>девочка раката
-							<p class="track_performer">чесночная блядина</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
 						<td>национальный исландский гимн
-							<p class="track_performer">чесночная блядина</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
 						<td>расследование терракта
-							<p class="track_performer">чесночная блядина</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
 						<td>дельфинбой
-							<p class="track_performer">чесночная блядина</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>5</td>
 						<td>утерянный третий коллаб поппи и граймс
-							<p class="track_performer">чесночная блядина</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>6</td>
 						<td>что такое реплей
-							<p class="track_performer">чесночная блядина</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>7</td>
 						<td>я нарисую на снегу соника (я нарисую на снегу косисато аято demo)
-							<p class="track_performer">чесночная блядина</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>8</td>
 						<td>разные сияющие днк (я такая в маbushii dna dake demo)
-							<p class="track_performer">чесночная блядина</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
 				</table>
 				<p class="info">8 треков, 11 минут<br>Выпуск на HTMP Records & blyadina4esno4naya</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_1" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/1.jpg">
-						<figcaption>Название</figcaption>
-					</figure></a>
+			<div class="versions" hidden>
+				<p class="latest-title">Другие версии альбома</p>
+				<div id="others" class="releases-tab">
+					<div class="release" onclick="window.location.href = '../albums/ialya'">
+						<img src="../albums/img/ialya.png">
+						<div class="release-title">I, Alya Bridge, have a dream</div>
+					</div>
 				</div>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_1" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/1.jpg">
-						<figcaption>Название</figcaption>
-						<p class="promo">ПРОМОСИНГЛ</p>
-					</figure></a>
+			<div class="singles" hidden>
+				<p class="latest-title">Синглы к альбому</p>
+				<div id="singles" class="releases-tab">
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_301')">
+						<img src="../artists/misc/301.jpg">
+						<div class="release-title">Shrimp Roll</div>
+					</div>
 				</div>
 			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script type="text/javascript">
+		document.getElementById("album_name").textContent = document.title;
+		document.addEventListener('DOMContentLoaded', function () {
+			new Zooming({
+				bgColor: "#000",
+				bgOpacity: 0.9,
+				enableGrab: false,
+			}).listen('.cover')
+		})
+	</script>
 </html>

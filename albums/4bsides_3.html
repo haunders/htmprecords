@@ -3,102 +3,108 @@
 	<head>
 		<meta charset="utf=8">
 		<title>4B-Sides, Vol. 3</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/4bsides_3.png"></div>
-				<div id="album_desc">
-					<p class="title">4B-Sides, Vol. 3</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/4bsides_3.png" class="cover" data-original="img/4bsides_3.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name"></p>
 					<a href="../artists/blyadina" class="artist">чесночная блядина</a>
 					<p class="date">03.09.2023</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_293')">Слушать</button>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_293')">▶</button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>антиогонь
-							<p class="track_performer">чесночная блядина</p>
+						<td>
+							<p>антиогонь</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>ROMANticist!!
-							<p class="track_performer">чесночная блядина</p>
+						<td>
+							<p>ROMANticist!!</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>T0P P1G
-							<p class="track_performer">чесночная блядина</p>
+						<td>
+							<p>T0P P1G</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
-						<td>ATHM
-							<p class="track_performer">чесночная блядина</p>
+						<td>
+							<p>ATHM</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>5</td>
-						<td>VIOLENCE - smeshmag mix
-							<p class="track_performer">чесночная блядина</p>
+						<td>
+							<p>VIOLENCE - smeshmag mix</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>6</td>
-						<td>DEVO4KA-MOTYGA (girl hoe)
-							<p class="track_performer">чесночная блядина</p>
+						<td>
+							<p>DEVO4KA-MOTYGA (girl hoe)</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>7</td>
-						<td>Union & Go
-							<p class="track_performer">чесночная блядина</p>
+						<td>
+							<p>Union & Go</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>8</td>
-						<td>bakajanainoninanofukakai.mp3
-							<p class="track_performer">чесночная блядина</p>
+						<td>
+							<p>bakajanainoninanofukakai.mp3</p>
+							<p class="track-performer">чесночная блядина</p>
 						</td>
 					</tr>
 				</table>
 				<p class="info">8 треков, 10 минут<br>Выпуск на HTMP Records & blyadina4esno4naya</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="sobaka_dlx"><figure class="sign_album">
-						<img src="img/sobaka_dlx.png">
-						<figcaption>собака в бондаже (cash grab edition)</figcaption>
-					</figure></a>
+			<div class="versions" hidden>
+				<p class="latest-title">Другие версии альбома</p>
+				<div id="others" class="releases-tab">
+					<div class="release" onclick="window.location.href = '../albums/ialya'">
+						<img src="../albums/img/ialya.png">
+						<div class="release-title">I, Alya Bridge, have a dream</div>
+					</div>
 				</div>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_237" target="_blank"><figure class="sign_album">
+			<div class="singles" hidden>
+				<p class="latest-title">Синглы к альбому</p>
+				<div id="singles" class="releases-tab">
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_237')">
 						<img src="../artists/misc/237.jpg">
-						<figcaption>исповедь артёма графа</figcaption>
-					</figure></a>
+						<div class="release-title">исповедь артёма графа</div>
+					</div>
 				</div>
 			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script type="text/javascript">
+		document.getElementById("album_name").textContent = document.title;
+		document.addEventListener('DOMContentLoaded', function () {
+			new Zooming({
+				bgColor: "#000",
+				bgOpacity: 0.9,
+				enableGrab: false,
+			}).listen('.cover')
+		})
+	</script>
 </html>
