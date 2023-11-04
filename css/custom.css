@@ -102,7 +102,7 @@ body {
     background: #1f1f1f;
     display: grid;
     gap: 2%;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
 .labels-grid-artists {
     padding: 0 10% 4% 10%;

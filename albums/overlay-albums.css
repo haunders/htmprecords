@@ -175,17 +175,20 @@
 .album-desc .listen {
 	border-radius: 27px;
 	display: inline-block;
-	background: #fff;
 	margin: 32px 0 0 0;
 	color: #000;
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	font-size: 19px;
 	width: 30px;
+	height: 30px;
 	transition: 0.2s;
+	border: none;
+	background-color: #292929;
+	background-image: url('../img/icon.png');
+	background-size: cover;
 }
 .album-desc .listen:hover {
-	background: #ccc;
 	transform: scale(1.05);
 	cursor: pointer;
 }

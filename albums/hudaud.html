@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf=8">
+		<title>Hudaud Bitch</title>
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+	</head>
+	<body id="album_body">
+			<div class="album-title">
+				<div class="cover-art"><img src="img/hudaud.png" class="cover" data-original="img/hudaud.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name"></p>
+					<a href="../artists/daku" class="artist">kuroki daku</a>
+					<p class="date">03.11.2022</p>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_312')"></button></div>
+				</div>
+			</div>
+			<div class="tracklist">
+				<table cellpadding="2">
+					<tr class="track-album">
+						<td>1</td>
+						<td>
+							<p>киска плачит и вопит (DJ KeyGen remix)</p>
+							<p class="track-performer">kuroki daku</p>
+						</td>
+					</tr>
+					<tr class="track-album">
+						<td>2</td>
+						<td>
+							<p>KAYF AUX FUTURE FUNK 🏖️🌴</p>
+							<p class="track-performer">kuroki daku</p>
+						</td>
+					</tr>
+					<tr class="track-album">
+						<td>3</td>
+						<td>
+							<p>寒いポッパ холодной попой</p>
+							<p class="track-performer">kuroki daku</p>
+						</td>
+					</tr>
+					<tr class="track-album">
+						<td>4</td>
+						<td>
+							<p>サッダーム・フセイン  ██▅▇██▇▆▅▄▄▄▇</p>
+							<p class="track-performer">kuroki daku</p>
+						</td>
+					</tr>
+					<tr class="track-album">
+						<td>5</td>
+						<td>
+							<p>luxury casino</p>
+							<p class="track-performer">kuroki daku</p>
+						</td>
+					</tr>
+					<tr class="track-album">
+						<td>6</td>
+						<td>
+							<p>КиТАйСКий вапОРВЕЙв (СэнСей ЭтО ПиZДеЦ)</p>
+							<p class="track-performer">kuroki daku</p>
+						</td>
+					</tr>
+					<tr class="track-album">
+						<td>7</td>
+						<td>
+							<p>p i s ' k o g l o t (дисс на фанта из ао)</p>
+							<p class="track-performer">kuroki daku</p>
+						</td>
+					</tr>
+					<tr class="track-album">
+						<td>8</td>
+						<td>
+							<p>junes music🎶🎶</p>
+							<p class="track-performer">kuroki daku</p>
+						</td>
+					</tr>
+					<tr class="track-album">
+						<td>9</td>
+						<td>
+							<p>H.B</p>
+							<p class="track-performer">kuroki daku</p>
+						</td>
+					</tr>
+					<tr class="track-album">
+						<td>10</td>
+						<td>
+							<p>реклама в ревербе</p>
+							<p class="track-performer">kuroki daku</p>
+						</td>
+					</tr>
+					<tr class="track-album">
+						<td>11</td>
+						<td>
+							<p>камзон женская версия.........</p>
+							<p class="track-performer">kuroki daku</p>
+						</td>
+					</tr>
+				</table>
+				<p class="info">11 треков, 30 минут<br>Выпуск на HTMP Records & Lonely Rolling Stars</p>
+			</div>
+			<div class="versions" hidden>
+				<p class="latest-title">Другие версии альбома</p>
+				<div id="others" class="releases-tab">
+					<div class="release" onclick="window.location.href = '../albums/ialya'">
+						<img src="../albums/img/ialya.png">
+						<div class="release-title">I, Alya Bridge, have a dream</div>
+					</div>
+				</div>
+			</div>
+			<div class="singles">
+				<p class="latest-title">Синглы к альбому</p>
+				<div id="singles" class="releases-tab">
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_311')">
+						<img src="../artists/misc/311.jpg">
+						<div class="release-title">КиТАйСКий вапОРВЕЙв (СэнСей ЭтО ПиZДеЦ)</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_309')">
+						<img src="../artists/misc/309.jpg">
+						<div class="release-title">サッダーム・フセイン  ██▅▇██▇▆▅▄▄▄▇</div>
+					</div>
+					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_308')">
+						<img src="../artists/misc/308.jpg">
+						<div class="release-title">寒いポッパ холодной попой ａｅｓｔｈｅｔｉｃ</div>
+					</div>
+				</div>
+			</div>
+	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script type="text/javascript">
+		document.getElementById("album_name").textContent = document.title;
+		document.addEventListener('DOMContentLoaded', function () {
+			new Zooming({
+				bgColor: "#000",
+				bgOpacity: 0.9,
+				enableGrab: false,
+			}).listen('.cover')
+		})
+	</script>
+</html>
