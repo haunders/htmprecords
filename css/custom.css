@@ -164,6 +164,7 @@ body {
     font-family: 'Inter';
     margin-top: 16px;
     text-align: center;
+    text-decoration: none;
 }
 .artist-name:hover {
     text-decoration: underline;
