@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>Hudaud Bitch</title>
 		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
 		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
@@ -10,7 +9,7 @@
 			<div class="album-title">
 				<div class="cover-art"><img src="img/hudaud.png" class="cover" data-original="img/hudaud.png"></div>
 				<div class="album-desc">
-					<p class="title" id="album_name"></p>
+					<p class="title" id="album_name">Hudaud Bitch</p>
 					<a href="../artists/daku" class="artist">kuroki daku</a>
 					<p class="date">03.11.2022</p>
 					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_312')"></button></div>
@@ -98,42 +97,30 @@
 				</table>
 				<p class="info">11 треков, 30 минут<br>Выпуск на HTMP Records & Lonely Rolling Stars</p>
 			</div>
-			<div class="versions" hidden>
-				<p class="latest-title">Другие версии альбома</p>
-				<div id="others" class="releases-tab">
-					<div class="release" onclick="window.location.href = '../albums/ialya'">
-						<img src="../albums/img/ialya.png">
-						<div class="release-title">I, Alya Bridge, have a dream</div>
-					</div>
-				</div>
-			</div>
 			<div class="singles">
 				<p class="latest-title">Синглы к альбому</p>
 				<div id="singles" class="releases-tab">
-					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_311')">
-						<img src="../artists/misc/311.jpg">
-						<div class="release-title">КиТАйСКий вапОРВЕЙв (СэнСей ЭтО ПиZДеЦ)</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_311" target="_blank">
+							<img src="../artists/misc/311.jpg">
+							<div class="release-title">КиТАйСКий вапОРВЕЙв (СэнСей ЭтО ПиZДеЦ)</div>
+						</a>
 					</div>
-					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_309')">
-						<img src="../artists/misc/309.jpg">
-						<div class="release-title">サッダーム・フセイン  ██▅▇██▇▆▅▄▄▄▇</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_309" target="_blank">
+							<img src="../artists/misc/309.jpg">
+							<div class="release-title">サッダーム・フセイン  ██▅▇██▇▆▅▄▄▄▇</div>
+						</a>
 					</div>
-					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_308')">
-						<img src="../artists/misc/308.jpg">
-						<div class="release-title">寒いポッパ холодной попой ａｅｓｔｈｅｔｉｃ</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_308" target="_blank">
+							<img src="../artists/misc/308.jpg">
+							<div class="release-title">寒いポッパ холодной попой ａｅｓｔｈｅｔｉｃ</div>
+						</a>
 					</div>
 				</div>
 			</div>
 	</body>
 	<script src="../zooming-master/build/zooming.min.js"></script>
-	<script type="text/javascript">
-		document.getElementById("album_name").textContent = document.title;
-		document.addEventListener('DOMContentLoaded', function () {
-			new Zooming({
-				bgColor: "#000",
-				bgOpacity: 0.9,
-				enableGrab: false,
-			}).listen('.cover')
-		})
-	</script>
+	<script src="overlay-albums.js"></script>
 </html>

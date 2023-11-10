@@ -2,89 +2,84 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>ok bestie</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/okbestie.png"></div>
-				<div id="album_desc">
-					<p class="title">ok bestie</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/okbestie.png" class="cover" data-original="img/okbestie.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name">ok bestie</p>
 					<a href="../artists/blyadina" class="artist">чесночная блядина</a>
 					<p class="date">23.09.2022</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_199')">Слушать</button>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_199')"></button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>Used To Know Lutiki
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>Used To Know Lutiki</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>дилюк ухажёр (от кэйи ушёл)
-							<p class="track_performer">чесночная блядина & Zenia And The Diamonds</p></td>
+						<td>
+							<p>дилюк ухажёр (от кэйи ушёл)</p>
+							<p class="track-performer">чесночная блядина & Zenia And The Diamonds</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>наказала грин ворлд
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>наказала грин ворлд</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
-						<td>Моши.Лайк
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>Моши.Лайк</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>5</td>
-						<td>ники минаж попала на остров кли
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>ники минаж попала на остров кли</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>6</td>
-						<td>ничего не осталось для тошнотворного такси (шитпост-аутро)
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>ничего не осталось для тошнотворного такси (шитпост-аутро)</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
 				</table>
 				<p class="info">6 треков, 10 минут<br>Выпуск на garlic_motherfucker under exclusive license to blyadina4esno4naya</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="sobaka_dlx"><figure class="sign_album">
-						<img src="img/sobaka_dlx.png">
-						<figcaption>собака в бондаже (cash grab edition)</figcaption>
-					</figure></a>
-				</div>
-			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_198" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/198.jpg">
-						<figcaption>дилюк ухажёр (от кэйи ушёл)</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_195" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/195.jpg">
-						<figcaption>Моши.Лайк + Used To Know Lutiki (OST "Поток Сознания")</figcaption>
-					</figure></a>
+			<div class="singles">
+				<p class="latest-title">Синглы к альбому</p>
+				<div id="singles" class="releases-tab">
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_198" target="_blank">
+							<img src="../artists/misc/198.jpg">
+							<div class="release-title">дилюк ухажёр (от кэйи ушёл)</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_195" target="_blank">
+							<img src="../artists/misc/195.jpg">
+							<div class="release-title">Моши.Лайк + Used To Know Lutiki (OST "Поток Сознания")</div>
+						</a>
+					</div>
 				</div>
 			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script src="overlay-albums.js"></script>
 </html>

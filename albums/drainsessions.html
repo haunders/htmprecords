@@ -2,88 +2,83 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>Drainsessions</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/drainsessions.png"></div>
-				<div id="album_desc">
-					<p class="title">Drainsessions</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/drainsessions.png" class="cover" data-original="img/drainsessions.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name">Drainsessions</p>
 					<a href="../artists/masura" class="artist">Masura Tyler</a><a class="artist"> & </a><a href="../artists/vlad" class="artist">MC VLAD INDIA 2005</a>
-					<p class="date">24.07.2023</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_277')">Слушать</button>
+					<p class="date">24.07.2022</p>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_277')"></button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>Мы продались власти
-							<p class="track_performer">Masura Tyler & MC VLAD INDIA 2005</p></td>
+						<td>
+							<p>Мы продались власти</p>
+							<p class="track-performer">Masura Tyler & MC VLAD INDIA 2005</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>Чесночная блядина
-							<p class="track_performer">Masura Tyler & MC VLAD INDIA 2005</p></td>
+						<td>
+							<p>Чесночная блядина</p>
+							<p class="track-performer">Masura Tyler & MC VLAD INDIA 2005</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>Кингслейййтер
-							<p class="track_performer">Masura Tyler & MC VLAD INDIA 2005</p></td>
+						<td>
+							<p>Кингслейййтер</p>
+							<p class="track-performer">Masura Tyler & MC VLAD INDIA 2005</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
-						<td>Первухлин
-							<p class="track_performer">Masura Tyler & MC VLAD INDIA 2005</p></td>
+						<td>
+							<p>Первухлин</p>
+							<p class="track-performer">Masura Tyler & MC VLAD INDIA 2005</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>5</td>
-						<td>РЕЗНЯ!!!!1
-							<p class="track_performer">Masura Tyler & MC VLAD INDIA 2005</p></td>
+						<td>
+							<p>РЕЗНЯ!!!!1</p>
+							<p class="track-performer">Masura Tyler & MC VLAD INDIA 2005</p>
+						</td>
 					</tr>
 				</table>
 				<p class="info">5 треков, 17 минут<br>Выпуск на HTMP Records & Salty Music</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="4bsides_1"><figure class="sign_album">
-						<img src="../artists/misc/1.jpg">
-						<figcaption>Название</figcaption>
-					</figure></a>
-				</div>
-			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_276" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/276.jpg">
-						<figcaption>Первухлин</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_225" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/225.jpg">
-						<figcaption>Кингслейййтер</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_221" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/221.jpg">
-						<figcaption>Мы продались власти</figcaption>
-					</figure></a>
+			<div class="singles">
+				<p class="latest-title">Синглы к альбому</p>
+				<div id="singles" class="releases-tab">
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_276" target="_blank">
+							<img src="../artists/misc/276.jpg">
+							<div class="release-title">Первухлин</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_225" target="_blank">
+							<img src="../artists/misc/225.jpg">
+							<div class="release-title">Кингслейййтер</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_221" target="_blank">
+							<img src="../artists/misc/221.jpg">
+							<div class="release-title">Мы продались власти</div>
+						</a>
+					</div>
 				</div>
 			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script src="overlay-albums.js"></script>
 </html>

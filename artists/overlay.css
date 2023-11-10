@@ -148,7 +148,11 @@ a {
 		width: 100%!important;
 	}
 	.latest-release {
+		margin-top: 25px!important;
 		width: 100%!important;
+	}
+	.latest-title {
+		margin-bottom: 15px!important;
 	}
 	.label {
 		font-size: 20px!important;

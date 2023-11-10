@@ -2,79 +2,81 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>Ender World</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/enderworld.png"></div>
-				<div id="album_desc">
-					<p class="title">Ender World</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/enderworld.png" class="cover" data-original="img/enderworld.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name">Ender World</p>
 					<a href="../artists/bridge" class="artist">Bridge</a>
 					<p class="date">17.02.2023</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_220')">Слушать</button>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_220')"></button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>Silent Hill (サイレントヒル)
-							<p class="track_performer">Bridge</p></td>
+						<td>
+							<p>Silent Hill (サイレントヒル)</p>
+							<p class="track-performer">Bridge</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>Ender World (ジ・エンド)
-							<p class="track_performer">Bridge</p></td>
+						<td>
+							<p>Ender World (ジ・エンド)</p>
+							<p class="track-performer">Bridge</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>Androgen (アンドロゲン)
-							<p class="track_performer">Bridge</p></td>
+						<td>
+							<p>Androgen (アンドロゲン)</p>
+							<p class="track-performer">Bridge</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
-						<td>All Over The Place (あらゆる所に)
-							<p class="track_performer">Bridge</p></td>
+						<td>
+							<p>All Over The Place (あらゆる所に)</p>
+							<p class="track-performer">Bridge</p>
+						</td>
 					</tr>
 				</table>
-				<p class="info">4 трека, 10 минут<br>Выпуск на HTMP Records & Salty Music</p>
+				<p class="info">4 треков, 10 минут<br>Выпуск на HTMP Records & Salty Music</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="enderworld_bonus"><figure class="sign_album">
-						<img src="img/enderworld_bonus.png">
-						<figcaption>Ender World (Bonus Ohayo Version)</figcaption>
-					</figure></a>
+			<div class="versions">
+				<p class="latest-title">Другие версии альбома</p>
+				<div id="others" class="releases-tab">
+					<div class="release">
+						<a href="../albums/enderworld_bonus">
+							<img src="../albums/img/enderworld_bonus.png">
+							<div class="release-title">Ender World (Bonus Ohayo Version)</div>
+						</a>
+					</div>
 				</div>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-                    <a href="https://vk.com/music/playlist/-190544150_264" target="_blank"><figure class="sign_album">
-                        <img src="img/enderworld.png">
-                        <figcaption>Silent Hill</figcaption>
-                    </figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_217" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/217.jpg">
-						<figcaption>Ender World</figcaption>
-					</figure></a>
+			<div class="singles">
+				<p class="latest-title">Синглы к альбому</p>
+				<div id="singles" class="releases-tab">
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_264" target="_blank">
+							<img src="../artists/misc/264.jpg">
+							<div class="release-title">Silent Hill</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_217" target="_blank">
+							<img src="../artists/misc/217.jpg">
+							<div class="release-title">Ender World</div>
+						</a>
+					</div>
 				</div>
 			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script src="overlay-albums.js"></script>
 </html>

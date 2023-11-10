@@ -2,78 +2,46 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>Леди Гроб твой враг</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/ladygrob.png"></div>
-				<div id="album_desc">
-					<p class="title">Леди Гроб твой враг</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/ladygrob.png" class="cover" data-original="img/ladygrob.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name">Леди Гроб твой враг</p>
 					<a href="../artists/lesbiyskie" class="artist">Лесбийские Манеры</a>
 					<p class="date">08.02.2020</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_12')">Слушать</button>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_12')"></button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>Sorry For Stars
-							<p class="track_performer">Лесбийские Манеры</p></td>
+						<td>
+							<p>Sorry For Stars</p>
+							<p class="track-performer">Лесбийские Манеры</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>диск жокей из аватарии ебанулся
-							<p class="track_performer">Лесбийские Манеры</p></td>
+						<td>
+							<p>диск жокей из аватарии ебанулся</p>
+							<p class="track-performer">Лесбийские Манеры</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>Бритни Спирс фанатка Блэк Саббэт)))
-							<p class="track_performer">Лесбийские Манеры</p></td>
+						<td>
+							<p>Бритни Спирс фанатка Блэк Саббэт)))</p>
+							<p class="track-performer">Лесбийские Манеры</p>
+						</td>
 					</tr>
 				</table>
 				<p class="info">3 трека, 11 минут<br>Выпуск на HTMP Russia</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="enderworld_bonus"><figure class="sign_album">
-						<img src="img/enderworld_bonus.png">
-						<figcaption>Ender World (Bonus Ohayo Version)</figcaption>
-					</figure></a>
-				</div>
-			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_72" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/72.jpg">
-						<figcaption>Я не робот</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_71" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/71.jpg">
-						<figcaption>Вискарь</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_47" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/47.jpg">
-						<figcaption>О Нет!</figcaption>
-					</figure></a>
-				</div>
-			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script src="overlay-albums.js"></script>
 </html>

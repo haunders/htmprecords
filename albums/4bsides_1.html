@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>4B-Sides, Vol. 1</title>
 		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
 		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
@@ -10,7 +9,7 @@
 			<div class="album-title">
 				<div class="cover-art"><img src="img/4bsides_1.png" class="cover" data-original="img/4bsides_1.png"></div>
 				<div class="album-desc">
-					<p class="title" id="album_name"></p>
+					<p class="title" id="album_name">4B-Sides, Vol. 1</p>
 					<a href="../artists/blyadina" class="artist">чесночная блядина</a>
 					<p class="date">05.03.2023</p>
 					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_224')"></button></div>
@@ -77,34 +76,7 @@
 				</table>
 				<p class="info">8 треков, 11 минут<br>Выпуск на HTMP Records & blyadina4esno4naya</p>
 			</div>
-			<div class="versions" hidden>
-				<p class="latest-title">Другие версии альбома</p>
-				<div id="others" class="releases-tab">
-					<div class="release" onclick="window.location.href = '../albums/ialya'">
-						<img src="../albums/img/ialya.png">
-						<div class="release-title">I, Alya Bridge, have a dream</div>
-					</div>
-				</div>
-			</div>
-			<div class="singles" hidden>
-				<p class="latest-title">Синглы к альбому</p>
-				<div id="singles" class="releases-tab">
-					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_301')">
-						<img src="../artists/misc/301.jpg">
-						<div class="release-title">Shrimp Roll</div>
-					</div>
-				</div>
-			</div>
 	</body>
 	<script src="../zooming-master/build/zooming.min.js"></script>
-	<script type="text/javascript">
-		document.getElementById("album_name").textContent = document.title;
-		document.addEventListener('DOMContentLoaded', function () {
-			new Zooming({
-				bgColor: "#000",
-				bgOpacity: 0.9,
-				enableGrab: false,
-			}).listen('.cover')
-		})
-	</script>
+	<script src="overlay-albums.js"></script>
 </html>

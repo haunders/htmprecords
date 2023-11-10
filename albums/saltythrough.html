@@ -2,120 +2,134 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>SALTY THROUGH THE VEINS</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/saltythrough.png"></div>
-				<div id="album_desc">
-					<p class="title">SALTY THROUGH THE VEINS</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/saltythrough.png" class="cover" data-original="img/saltythrough.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name">SALTY THROUGH THE VEINS</p>
 					<a href="../artists/radmila" class="artist">Радмила Павлова</a>
 					<p class="date">24.01.2022</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_146')">Слушать</button>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_146')"></button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>Альткилт
-							<p class="track_performer">Радмила Павлова</p></td>
+						<td>
+							<p>Альткилт</p>
+							<p class="track-performer">Радмила Павлова</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>Казах
-							<p class="track_performer">Радмила Павлова feat. Masura Tyler, Paula Gregori</p></td>
+						<td>
+							<p>Казах</p>
+							<p class="track-performer">Радмила Павлова feat. Masura Tyler, Paula Gregori</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>Марина (Она написала фанфик на фикбуке)
-							<p class="track_performer">Радмила Павлова</p></td>
+						<td>
+							<p>Марина (Она написала фанфик на фикбуке)</p>
+							<p class="track-performer">Радмила Павлова</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
-						<td>Клиент Сова
-							<p class="track_performer">Радмила Павлова</p></td>
+						<td>
+							<p>Клиент Сова</p>
+							<p class="track-performer">Радмила Павлова</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>5</td>
-						<td>Соль по вене
-							<p class="track_performer">Радмила Павлова</p></td>
+						<td>
+							<p>Соль по вене</p>
+							<p class="track-performer">Радмила Павлова</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>6</td>
-						<td>(Кто такие) Контркультурщики
-							<p class="track_performer">Радмила Павлова feat. свекКровь</p></td>
+						<td>
+							<p>(Кто такие) Контркультурщики</p>
+							<p class="track-performer">Радмила Павлова feat. свекКровь</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>7</td>
-						<td>Hello Kitty
-							<p class="track_performer">Радмила Павлова</p></td>
+						<td>
+							<p>Hello Kitty</p>
+							<p class="track-performer">Радмила Павлова</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>8</td>
-						<td>Pussy
-							<p class="track_performer">Радмила Павлова</p></td>
+						<td>
+							<p>Pussy</p>
+							<p class="track-performer">Радмила Павлова</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>9</td>
-						<td>Boy
-							<p class="track_performer">Радмила Павлова</p></td>
+						<td>
+							<p>Boy</p>
+							<p class="track-performer">Радмила Павлова</p>
+						</td>
 					</tr>
 				</table>
 				<p class="info">9 треков, 21 минута<br>Выпуск на HTMP Russia</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="saltythrough_dlx"><figure class="sign_album">
-						<img src="img/saltythrough_dlx.png">
-						<figcaption>SALTY THROUGH THE VEINS UNDER THE STARLIGHT</figcaption>
-					</figure></a>
-					<a href="saltlight"><figure class="sign_album">
-						<img src="img/saltlight.png">
-						<figcaption>SALTLIGHT</figcaption>
-					</figure></a>
+			<div class="versions">
+				<p class="latest-title">Другие версии альбома</p>
+				<div id="others" class="releases-tab">
+					<div class="release">
+						<a href="../albums/saltythrough_dlx">
+							<img src="../albums/img/saltythrough_dlx.png">
+							<div class="release-title">SALTY THROUGH THE VEINS UNDER THE STARLIGHT</div>
+						</a>
+					</div>
 				</div>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_153" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/153.jpg">
-						<figcaption>Соль по вене</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_145" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/145.jpg">
-						<figcaption>Клиент Сова</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_144" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/144.jpg">
-						<figcaption>Альткилт</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_138" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/138.jpg">
-						<figcaption>(Кто такие) Контркультурщики</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_122" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/122.jpg">
-						<figcaption>Казах</figcaption>
-					</figure></a>
+			<div class="singles">
+				<p class="latest-title">Синглы к альбому</p>
+				<div id="singles" class="releases-tab">
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_153" target="_blank">
+							<img src="../artists/misc/153.jpg">
+							<div class="release-title">Соль по вене</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_145" target="_blank">
+							<img src="../artists/misc/145.jpg">
+							<div class="release-title">Клиент Сова</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_144" target="_blank">
+							<img src="../artists/misc/144.jpg">
+							<div class="release-title">Альткилт</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_138" target="_blank">
+							<img src="../artists/misc/138.jpg">
+							<div class="release-title">(Кто такие) Контркультурщики</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_122" target="_blank">
+							<img src="../artists/misc/122.jpg">
+							<div class="release-title">Казах</div>
+						</a>
+					</div>
 				</div>
 			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script src="overlay-albums.js"></script>
 </html>

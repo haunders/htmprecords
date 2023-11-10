@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>Бучихи атакуют первыми</title>
 		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
 		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
@@ -10,7 +9,7 @@
 			<div class="album-title">
 				<div class="cover-art"><img src="img/buchixi.png" class="cover" data-original="img/buchixi.png"></div>
 				<div class="album-desc">
-					<p class="title" id="album_name"></p>
+					<p class="title" id="album_name">Бучихи атакуют первыми</p>
 					<a href="../artists/blyadina" class="artist">чесночная блядина</a>
 					<p class="date">11.09.2023</p>
 					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_297')"></button></div>
@@ -70,46 +69,36 @@
 				</table>
 				<p class="info">7 треков, 12 минут<br>Выпуск на HTMP Records & blyadina4esno4naya</p>
 			</div>
-			<div class="versions" hidden>
-				<p class="latest-title">Другие версии альбома</p>
-				<div id="others" class="releases-tab">
-					<div class="release" onclick="window.location.href = '../albums/ialya'">
-						<img src="../albums/img/ialya.png">
-						<div class="release-title">I, Alya Bridge, have a dream</div>
-					</div>
-				</div>
-			</div>
 			<div class="singles">
 				<p class="latest-title">Синглы к альбому</p>
 				<div id="singles" class="releases-tab">
-					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_303')">
-						<img src="../artists/misc/303.jpg">
-						<div class="release-title">стукни адище killshotом baby</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_303" target="_blank">
+							<img src="../artists/misc/303.jpg">
+							<div class="release-title">стукни адище killshotом baby</div>
+						</a>
 					</div>
-					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_296')">
-						<img src="../artists/misc/296.jpg">
-						<div class="release-title">кавайные рельсы клары</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_296" target="_blank">
+							<img src="../artists/misc/296.jpg">
+							<div class="release-title">кавайные рельсы клары</div>
+						</a>
 					</div>
-					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_295')">
-						<img src="../artists/misc/295.jpg">
-						<div class="release-title">дементий, god-ish свиней</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_295" target="_blank">
+							<img src="../artists/misc/295.jpg">
+							<div class="release-title">дементий, god-ish свиней</div>
+						</a>
 					</div>
-					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_294')">
-						<img src="../artists/misc/294.jpg">
-						<div class="release-title">смысл жизни для чистой улыбки</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_294" target="_blank">
+							<img src="../artists/misc/294.jpg">
+							<div class="release-title">смысл жизни для чистой улыбки</div>
+						</a>
 					</div>
 				</div>
 			</div>
 	</body>
 	<script src="../zooming-master/build/zooming.min.js"></script>
-	<script type="text/javascript">
-		document.getElementById("album_name").textContent = document.title;
-		document.addEventListener('DOMContentLoaded', function () {
-			new Zooming({
-				bgColor: "#000",
-				bgOpacity: 0.9,
-				enableGrab: false,
-			}).listen('.cover')
-		})
-	</script>
+	<script src="overlay-albums.js"></script>
 </html>

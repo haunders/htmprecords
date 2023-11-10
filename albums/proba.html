@@ -2,75 +2,53 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>Проба гелевой ручки</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/proba.png"></div>
-				<div id="album_desc">
-					<p class="title">Проба гелевой ручки</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/proba.png" class="cover" data-original="img/proba.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name">Проба гелевой ручки</p>
 					<a href="../artists/lyuba" class="artist">Люба и невероятные</a>
 					<p class="date">05.03.2021</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_114')">Слушать</button>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_114')"></button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>Бедная Алиса
-							<p class="track_performer">Люба и невероятные</p></td>
+						<td>
+							<p>Бедная Алиса</p>
+							<p class="track-performer">Люба и невероятные</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>Век бурления
-							<p class="track_performer">Люба и невероятные</p></td>
+						<td>
+							<p>Век бурления</p>
+							<p class="track-performer">Люба и невероятные</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>Z L O S P I T
-							<p class="track_performer">Люба и невероятные</p></td>
+						<td>
+							<p>Z L O S P I T</p>
+							<p class="track-performer">Люба и невероятные</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
-						<td>ВПИТД
-							<p class="track_performer">Люба и невероятные</p></td>
+						<td>
+							<p>ВПИТД</p>
+							<p class="track-performer">Люба и невероятные</p>
+						</td>
 					</tr>
 				</table>
 				<p class="info">4 трека, 8 минут<br>Выпуск на HTMP Russia</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="sobaka_dlx"><figure class="sign_album">
-						<img src="img/sobaka_dlx.png">
-						<figcaption>собака в бондаже (cash grab edition)</figcaption>
-					</figure></a>
-				</div>
-			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_227" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/227.jpg">
-						<figcaption>Malibu</figcaption>
-					</figure></a>
-				</div>
-			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script src="overlay-albums.js"></script>
 </html>

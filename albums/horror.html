@@ -2,96 +2,89 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>horror</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/horror.png"></div>
-				<div id="album_desc">
-					<p class="title">horror</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/horror.png" class="cover" data-original="img/horror.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name">horror</p>
 					<a href="../artists/radmila" class="artist">Радмила Павлова</a>
 					<p class="date">10.09.2020</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_94')">Слушать</button>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_94')"></button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>пмс среликс возьми трубку
-							<p class="track_performer">Радмила Павлова ft. Masura Tyler</p></td>
+						<td>
+							<p>пмс среликс возьми трубку</p>
+							<p class="track-performer">Радмила Павлова ft. Masura Tyler</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>жирманота
-							<p class="track_performer">Радмила Павлова</p></td>
+						<td>
+							<p>жирманота</p>
+							<p class="track-performer">Радмила Павлова</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>турбошансон (дисс на научи хорошему 2)
-							<p class="track_performer">Радмила Павлова</p></td>
+						<td>
+							<p>турбошансон (дисс на научи хорошему 2)</p>
+							<p class="track-performer">Радмила Павлова</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
-						<td>clown
-							<p class="track_performer">Радмила Павлова</p></td>
+						<td>
+							<p>clown</p>
+							<p class="track-performer">Радмила Павлова</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>5</td>
-						<td>митин друг
-							<p class="track_performer">Радмила Павлова</p></td>
+						<td>
+							<p>митин друг</p>
+							<p class="track-performer">Радмила Павлова</p>
+						</td>
 					</tr>
 				</table>
 				<p class="info">5 треков, 12 минут<br>Выпуск на HTMP Russia</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="horrorock"><figure class="sign_album">
-						<img src="img/horrorock.png">
-						<figcaption>horror rock</figcaption>
-					</figure></a>
-					<a href="rock"><figure class="sign_album">
-						<img src="img/rock.png">
-						<figcaption>rock</figcaption>
-					</figure></a>
-				</div>
-			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_98" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/98.jpg">
-						<figcaption>турбошансон (дисс на научи хорошему 2)</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_82" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/82.jpg">
-						<figcaption>жирманота</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_69" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/69.jpg">
-						<figcaption>clown</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_42" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/42.jpg">
-						<figcaption>пмс среликс возьми трубку</figcaption>
-					</figure></a>
+			<div class="singles">
+				<p class="latest-title">Синглы к альбому</p>
+				<div id="singles" class="releases-tab">
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_98" target="_blank">
+							<img src="../artists/misc/98.jpg">
+							<div class="release-title">турбошансон (дисс на научи хорошему 2)</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_82" target="_blank">
+							<img src="../artists/misc/82.jpg">
+							<div class="release-title">жирманота</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_69" target="_blank">
+							<img src="../artists/misc/69.jpg">
+							<div class="release-title">clown</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_42" target="_blank">
+							<img src="../artists/misc/42.jpg">
+							<div class="release-title">пмс среликс возьми трубку</div>
+						</a>
+					</div>
 				</div>
 			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script src="overlay-albums.js"></script>
 </html>

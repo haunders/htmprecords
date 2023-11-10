@@ -2,83 +2,76 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>Королевские Ценности</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/korolevskie.png"></div>
-				<div id="album_desc">
-					<p class="title">Королевские Ценности</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/korolevskie.png" class="cover" data-original="img/korolevskie.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name">Королевские Ценности</p>
 					<a href="../artists/masura" class="artist">Masura Tyler</a>
-					<p class="date">19.07.2023</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_73')">Слушать</button>
+					<p class="date">19.07.2020</p>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_73')"></button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>Я не робот
-							<p class="track_performer">Masura Tyler</p></td>
+						<td>
+							<p>Я не робот</p>
+							<p class="track-performer">Masura Tyler</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>Семнадцать
-							<p class="track_performer">Masura Tyler</p></td>
+						<td>
+							<p>Семнадцать</p>
+							<p class="track-performer">Masura Tyler</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>Вискарь
-							<p class="track_performer">Masura Tyler</p></td>
+						<td>
+							<p>Вискарь</p>
+							<p class="track-performer">Masura Tyler</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
-						<td>О Нет!
-							<p class="track_performer">Masura Tyler</p></td>
+						<td>
+							<p>О Нет!</p>
+							<p class="track-performer">Masura Tyler</p>
+						</td>
 					</tr>
 				</table>
 				<p class="info">4 трека, 10 минут<br>Выпуск на HTMP Russia</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="enderworld_bonus"><figure class="sign_album">
-						<img src="img/enderworld_bonus.png">
-						<figcaption>Ender World (Bonus Ohayo Version)</figcaption>
-					</figure></a>
-				</div>
-			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_72" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/72.jpg">
-						<figcaption>Я не робот</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_71" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/71.jpg">
-						<figcaption>Вискарь</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_47" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/47.jpg">
-						<figcaption>О Нет!</figcaption>
-					</figure></a>
+			<div class="singles">
+				<p class="latest-title">Синглы к альбому</p>
+				<div id="singles" class="releases-tab">
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_72" target="_blank">
+							<img src="../artists/misc/72.jpg">
+							<div class="release-title">Я не робот</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_71" target="_blank">
+							<img src="../artists/misc/71.jpg">
+							<div class="release-title">Вискарь</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_47" target="_blank">
+							<img src="../artists/misc/47.jpg">
+							<div class="release-title">О Нет!</div>
+						</a>
+					</div>
 				</div>
 			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script src="overlay-albums.js"></script>
 </html>

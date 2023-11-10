@@ -2,85 +2,67 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>SALTY MENTAL</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/saltymental.png"></div>
-				<div id="album_desc">
-					<p class="title">SALTY MENTAL</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/saltymental.png" class="cover" data-original="img/saltymental.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name">SALTY MENTAL</p>
 					<a href="../artists/lyuba" class="artist">Люба и невероятные</a>
 					<p class="date">18.05.2021</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_127')">Слушать</button>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_127')"></button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>Мия гудбае!
-							<p class="track_performer">Люба и невероятные</p></td>
+						<td>
+							<p>Мия гудбае!</p>
+							<p class="track-performer">Люба и невероятные</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>Крипи Хаку сериал
-							<p class="track_performer">Люба и невероятные</p></td>
+						<td>
+							<p>Крипи Хаку сериал</p>
+							<p class="track-performer">Люба и невероятные</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>Андеграунд храм
-							<p class="track_performer">Люба и невероятные</p></td>
+						<td>
+							<p>Андеграунд храм</p>
+							<p class="track-performer">Люба и невероятные</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
-						<td>Похуй, пляшем
-							<p class="track_performer">Люба и невероятные</p></td>
+						<td>
+							<p>Похуй, пляшем</p>
+							<p class="track-performer">Люба и невероятные</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>5</td>
-						<td>Хакуша
-							<p class="track_performer">Люба и невероятные</p></td>
+						<td>
+							<p>Хакуша</p>
+							<p class="track-performer">Люба и невероятные</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>6</td>
-						<td>У меня есть кот
-							<p class="track_performer">Люба и невероятные</p></td>
+						<td>
+							<p>У меня есть кот</p>
+							<p class="track-performer">Люба и невероятные</p>
+						</td>
 					</tr>
 				</table>
 				<p class="info">6 треков, 9 минут<br>Выпуск на HTMP Russia</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="sobaka_dlx"><figure class="sign_album">
-						<img src="img/sobaka_dlx.png">
-						<figcaption>собака в бондаже (cash grab edition)</figcaption>
-					</figure></a>
-				</div>
-			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_227" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/227.jpg">
-						<figcaption>Malibu</figcaption>
-					</figure></a>
-				</div>
-			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script src="overlay-albums.js"></script>
 </html>

@@ -2,98 +2,97 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>Experimentalka Experience</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/experimentalka.png"></div>
-				<div id="album_desc">
-					<p class="title">Experimentalka Experience</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/experimentalka.png" class="cover" data-original="img/experimentalka.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name">Experimentalka Experience</p>
 					<a href="../artists/blyadina" class="artist">чесночная блядина</a>
 					<p class="date">27.06.2023</p>
-					<button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_249')">Слушать</button>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_249')"></button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>INTRO = SΛOLO =
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>INTRO = SΛOLO =</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>Inside Wednesday
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>Inside Wednesday</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>I'm Feeling Loneliness-Bitch
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>I'm Feeling Loneliness-Bitch</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
-						<td>TATI-Malisharik
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>TATI-Malisharik</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>5</td>
-						<td>Madam Faruzam goes B00MBAYA
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>Madam Faruzam goes B00MBAYA</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>6</td>
-						<td>∀NONYMOUS DUCK:.hatsunetoes
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>∀NONYMOUS DUCK:.hatsunetoes</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>7</td>
-						<td>Gospel For a NARI Century
-							<p class="track_performer">чесночная блядина</p></td>
+						<td>
+							<p>Gospel For a NARI Century</p>
+							<p class="track-performer">чесночная блядина</p>
+						</td>
 					</tr>
 				</table>
 				<p class="info">7 треков, 11 минут<br>Выпуск на HTMP Records & blyadina4esno4naya</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="sobaka_dlx"><figure class="sign_album">
-						<img src="img/sobaka_dlx.png">
-						<figcaption>собака в бондаже (cash grab edition)</figcaption>
-					</figure></a>
-				</div>
-			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_270" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/270.jpg">
-						<figcaption>Gospel For a NARI Century</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_269" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/269.jpg">
-						<figcaption>I'm Feeling Loneliness-Bitch</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_246" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/246.jpg">
-						<figcaption>Inside Wednesday</figcaption>
-					</figure></a>
+			<div class="singles">
+				<p class="latest-title">Синглы к альбому</p>
+				<div id="singles" class="releases-tab">
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_270" target="_blank">
+							<img src="../artists/misc/270.jpg">
+							<div class="release-title">Gospel For A NARI Century</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_269" target="_blank">
+							<img src="../artists/misc/269.jpg">
+							<div class="release-title">I'm Feeling Loneliness-Bitch</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_246" target="_blank">
+							<img src="../artists/misc/246.jpg">
+							<div class="release-title">Inside Wednesday</div>
+						</a>
+					</div>
 				</div>
 			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script src="overlay-albums.js"></script>
 </html>

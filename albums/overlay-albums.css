@@ -274,9 +274,6 @@ a {
 .release a :hover {
 	text-decoration: underline;
 }
-.release:hover {
-	cursor: pointer;
-}
 .release img:hover {
 	filter: brightness(75%);
 }

@@ -2,103 +2,104 @@
 <html>
 	<head>
 		<meta charset="utf=8">
-		<title>colLABoratory</title>
-		<link rel="stylesheet" href="style.css" type="text/css">
-		<link rel="stylesheet" href="../artists/style.css" type="text/css">
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="overlay-albums.css" type="text/css">
+		<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 	</head>
 	<body id="album_body">
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<!-- ЗАГОЛОВОК -->
-			<div id="album_title">
-				<div id="cover_art_title"><img src="img/collab.png"></div>
-				<div id="album_desc">
-					<p class="title">colLABoratory</p>
+			<div class="album-title">
+				<div class="cover-art"><img src="img/collab.png" class="cover" data-original="img/collab.png"></div>
+				<div class="album-desc">
+					<p class="title" id="album_name">colLABoratory</p>
 					<a href="../artists/bridge" class="artist">Bridge</a>
 					<p class="date">29.06.2023</p>
-					<button class="listen" style="display: block;" onclick="window.open('https://vk.com/music/playlist/-190544150_253')">Слушать</button>
+					<div><button class="listen" onclick="window.open('https://vk.com/music/playlist/-190544150_253')"></button></div>
 				</div>
 			</div>
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<!-- ТРЭКЛИСТ -->
-			<div id="tracklist">
+			<div class="tracklist">
 				<table cellpadding="2">
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>1</td>
-						<td>That's Ready
-							<p class="track_performer">Bridge feat. Вероника Степанова</p></td>
+						<td>
+							<p>That's Ready</p>
+							<p class="track-performer">Bridge feat. Вероника Степанова</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>2</td>
-						<td>Ofniki
-							<p class="track_performer">Bridge feat. Maniloun</p></td>
+						<td>
+							<p>Ofniki</p>
+							<p class="track-performer">Bridge feat. Maniloun</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>3</td>
-						<td>Malibu
-							<p class="track_performer">Bridge feat. Есаул</p></td>
+						<td>
+							<p>Malibu</p>
+							<p class="track-performer">Bridge feat. Есаул</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>4</td>
-						<td>Boys No Rights
-							<p class="track_performer">Bridge feat. Оле4ка</p></td>
+						<td>
+							<p>Boys No Rights</p>
+							<p class="track-performer">Bridge feat. Оле4ка</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>5</td>
-						<td>Meet Me At Astral
-							<p class="track_performer">Bridge feat. Валерия Лукьянова</p></td>
+						<td>
+							<p>Meet Me At Astral</p>
+							<p class="track-performer">Bridge feat. Валерия Лукьянова</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>6</td>
-						<td>Just Stopped Rapipa (2023 ver.)
-							<p class="track_performer">Bridge feat. princess livi</p></td>
+						<td>
+							<p>Just Stopped Rapipa (2023 ver.)</p>
+							<p class="track-performer">Bridge feat. princess livi</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>7</td>
-						<td>Anonymous B&Z / Francis With Parrot
-							<p class="track_performer">Bridge feat. Zenia And The Diamonds</p></td>
+						<td>
+							<p>Anonymous B&Z / Francis With Parrot</p>
+							<p class="track-performer">Bridge feat. Zenia And The Diamonds</p>
+						</td>
 					</tr>
-					<tr class="track_album">
+					<tr class="track-album">
 						<td>8</td>
-						<td>Boys No Rights (Remix)
-							<p class="track_performer">Bridge feat. Оле4ка & чесночная блядина</p></td>
+						<td>
+							<p>Boys No Rights (Remix)</p>
+							<p class="track-performer">Bridge feat. Оле4ка & чесночная блядина</p>
+						</td>
 					</tr>
 				</table>
-				<p class="info">8 треков, 24 минуты<br>Выпуск на HTMP Records & Salty Records</p>
+				<p class="info">8 треков, 24 минут<br>Выпуск на HTMP Records & Salty Records</p>
 			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions" style="display: none;">
-				<p id="title">Другие версии альбома</p>
-				<div id="album_list">
-					<a href="question_dlx"><figure class="sign_album">
-						<img src="img/question_dlx.png">
-						<figcaption>Question Your Existence</figcaption>
-					</figure></a>
-				</div>
-			</div>
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<!-- ВЕРСИИ -->
-			<div id="versions">
-				<p id="title">Синглы</p>
-				<div id="album_list">
-					<a href="https://vk.com/music/playlist/-190544150_252" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/252.jpg">
-						<figcaption>Ofniki</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_251" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/251.jpg">
-						<figcaption>Anonymous B&Z</figcaption>
-					</figure></a>
-					<a href="https://vk.com/music/playlist/-190544150_248" target="_blank"><figure class="sign_album">
-						<img src="../artists/misc/248.jpg">
-						<figcaption>Boys No Rights</figcaption>
-					</figure></a>
+			<div class="singles">
+				<p class="latest-title">Синглы к альбому</p>
+				<div id="singles" class="releases-tab">
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_252" target="_blank">
+							<img src="../artists/misc/252.jpg">
+							<div class="release-title">Ofniki</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_251" target="_blank">
+							<img src="../artists/misc/251.jpg">
+							<div class="release-title">Anonymous B&Z</div>
+						</a>
+					</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_248" target="_blank">
+							<img src="../artists/misc/248.jpg">
+							<div class="release-title">Boys No Rights</div>
+						</a>
+					</div>
 				</div>
 			</div>
 	</body>
+	<script src="../zooming-master/build/zooming.min.js"></script>
+	<script src="overlay-albums.js"></script>
 </html>
