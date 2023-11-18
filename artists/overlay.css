@@ -88,13 +88,6 @@ body {
 a {
 	text-decoration: none;
 }
-.release a :hover {
-	text-decoration: underline;
-	filter: brightness(75%);
-}
-.release:hover {
-	cursor: pointer;
-}
 .release img:hover {
 	filter: brightness(75%);
 }

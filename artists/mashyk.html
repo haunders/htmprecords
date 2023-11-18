@@ -26,30 +26,15 @@
 						</tr>
 					</table>
 					<div class="latest-release">
-						<div id="prerelease" hidden>
-							<script type="text/javascript">
-								var prelink = '../albums/ialya_dlx';
-							</script>
-							<p class="latest-title">Предзаказ</p>
-							<div class="release-newest">
-								<img src="../albums/img/ialya_dlx.png" onclick="window.location.href = prelink">
-								<div class="release-newest-description">
-									<figcaption class="date">2023</figcaption>
-									<figcaption class="title" onclick="window.location.href = prelink">I, Alya Bridge, have a dream (Deluxe)</figcaption>
-									<figcaption class="desc">Альбом</figcaption>
-								</div>
-							</div>
-						</div>
 						<div id="latest">
-							<script type="text/javascript">
-								var link = 'https://vk.com/music/playlist/-190544150_133';
-							</script>
 							<p class="latest-title">Последний релиз</p>
 							<div class="release-newest">
-								<img src="misc/133.jpg" onclick="window.open(link)">
+								<a href='https://vk.com/music/playlist/-190544150_133'><img src="misc/133.jpg"></a>
 								<div class="release-newest-description">
 									<figcaption class="date">27-07-2021</figcaption>
-									<figcaption class="title" onclick="window.open(link)">NE ROFL</figcaption>
+									<a href='https://vk.com/music/playlist/-190544150_133'>
+										<figcaption class="title">NE ROFL</figcaption>
+									</a>
 									<figcaption class="desc">Сингл</figcaption>
 								</div>
 							</div>
@@ -57,9 +42,11 @@
 					</div>
 				</div>
 				<div id="singles" class="releases-tab" aria-labelledby="tab-4">
-					<div class="release" onclick="window.open('https://vk.com/music/playlist/-190544150_133')">
-						<img src="misc/133.jpg">
-						<div class="release-title">NE ROFL</div>
+					<div class="release">
+						<a href="https://vk.com/music/playlist/-190544150_133" target="_blank">
+							<img src="misc/133.jpg">
+							<div class="release-title">NE ROFL</div>
+						</a>
 					</div>
 				</div>
 			</div>
