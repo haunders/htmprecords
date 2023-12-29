@@ -215,6 +215,9 @@
     overflow: hidden;
 	margin: 0;
 }
+.track-alt {
+	color: #9a9a9a;
+}
 .track-performer {
 	color: #9a9a9a;
 	font-size: 11px;
