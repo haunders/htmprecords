@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf=8">
+		<title>Paula Gregori</title>
+		<link rel="stylesheet" href="../../static/css/overlay-artists.css" type="text/css">
+		<link rel="shortcut icon" href="../../static/img/favicon.png" type="image/x-icon">
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	</head>
+	<body>
+		<div class="tabs">
+			<div class="tabs-menu" aria-labelledby="tabs-title">
+				<a id="tab-1" href="#popular"><div class="label" id="lab-1">Популярные треки</div></a>
+				<a id="tab-2" href="#lp" hidden><div class="label" id="lab-2">Альбомы</div></a>
+				<a id="tab-7" href="#mixtapes" hidden><div class="label" id="lab-7">Микстейпы</div></a>
+				<a id="tab-3" href="#ep" hidden><div class="label" id="lab-3">EP</div></a>
+				<a id="tab-4" href="#singles" hidden><div class="label" id="lab-4">Синглы</div></a>
+				<a id="tab-5" href="#compilations" hidden><div class="label" id="lab-5">Сборники</div></a>
+				<a id="tab-6" href="#featured" hidden><div class="label" id="lab-6">Ещё с исполнителем</div></a>
+			</div>
+			<div class="panel">
+				<div id="popular" class="releases-tab" aria-labelledby="tab-1">
+					<table cellpadding="5">
+						
+						<tr class="topsong" onclick="window.open('https://vk.com/music/playlist/-190544150_146')">
+							<td>1</td>
+							<td><img src="../../static/img/releases/146.jpg" height="49px"></td>
+							<td>
+								Казах
+								
+								<figcaption class="albumcap">SALTY THROUGH THE VEINS</figcaption>
+								
+							</td>
+						</tr>
+						
+						<tr class="topsong" onclick="window.open('https://vk.com/music/playlist/-190544150_110')">
+							<td>2</td>
+							<td><img src="../../static/img/releases/110.jpg" height="49px"></td>
+							<td>
+								Натура
+								
+								<figcaption class="albumcap">Натура - Single</figcaption>
+								
+							</td>
+						</tr>
+						
+						<tr class="topsong" onclick="window.open('https://vk.com/music/playlist/-190544150_113')">
+							<td>3</td>
+							<td><img src="../../static/img/releases/113.jpg" height="49px"></td>
+							<td>
+								Новый мерч
+								
+								<figcaption class="albumcap">Новый мерч - Single</figcaption>
+								
+							</td>
+						</tr>
+						
+					</table>
+					<div class="latest-release">
+						<div id="latest">
+							
+							
+							
+							<p class="latest-title">Последний релиз</p>
+							<div class="release-newest">
+								
+								
+								<a href='https://vk.com/music/playlist/-190544150_122' target="_blank"><img src="../../static/img/releases/122.jpg"></a>
+								<div class="release-newest-description">
+									<figcaption class="date">31-05-2021</figcaption>
+									<a href='https://vk.com/music/playlist/-190544150_122' target="_blank">
+										<figcaption class="title">Казах</figcaption>
+									</a>
+									<figcaption class="desc">Сингл</figcaption>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="lp" class="releases-tab" aria-labelledby="tab-2">
+				</div>
+				<div id="ep" class="releases-tab" aria-labelledby="tab-3">
+				</div>
+				<div id="singles" class="releases-tab" aria-labelledby="tab-4">
+				</div>
+				<div id="compilations" class="releases-tab" aria-labelledby="tab-5">
+				</div>
+				<div id="featured" class="releases-tab" aria-labelledby="tab-6">
+				</div>
+				<div id="mixtapes" class="releases-tab" aria-labelledby="tab-7">
+				</div>
+			</div>
+		  </div>
+	</body>
+<script type="text/javascript">
+const tabsContainer = document.querySelector('.tabs');
+const tabsList = tabsContainer.querySelector('.tabs-menu');
+const tabButtons = tabsList.querySelectorAll('a');
+const tabLabels = tabsList.querySelectorAll('.label');
+const tabPanels = tabsContainer.querySelectorAll('.panel > div')
+switchTab(document.querySelector('#tab-1'), document.querySelector('#lab-1'));
+tabButtons.forEach((tab, index) => {
+	if (index === 0) {
+	} else {
+		tabPanels[index].setAttribute('hidden', '');
+	}
+});
+
+tabsList.addEventListener("click", (e) => {
+	const clickedTab = e.target.closest("a");
+	const clickedLabel = e.target.closest(".label");
+	if (!clickedTab) return;
+	e.preventDefault();
+	switchTab(clickedTab, clickedLabel);
+})
+
+function switchTab(newTab, newLabel) {
+	const activePanelId = newTab.getAttribute("href");
+	const activePanel = tabsContainer.querySelector(activePanelId);
+	tabPanels.forEach((panel) => {
+		$(panel).hide();
+	});
+	$(activePanel).show();
+	clearLabels();
+	$(newLabel).css("background", "#292929");
+}
+
+function clearLabels() {
+	tabLabels.forEach((label) => {
+		$(label).css("background", "#1f1f1f");
+	});
+}
+
+document.getElementById('tab-4').hidden = false;
+
+
+
+document.getElementById('tab-6').hidden = false;
+
+
+
+tabPanels[3].innerHTML += `<div class="release"><a href='https://vk.com/music/playlist/-190544150_122' target="_blank">
+	<img src="../../static/img/releases/122.jpg">
+	<div class="release-title">Казах</div>
+</a></div>`;
+
+tabPanels[3].innerHTML += `<div class="release"><a href='https://vk.com/music/playlist/-190544150_113' target="_blank">
+	<img src="../../static/img/releases/113.jpg">
+	<div class="release-title">Новый мерч</div>
+</a></div>`;
+
+tabPanels[3].innerHTML += `<div class="release"><a href='https://vk.com/music/playlist/-190544150_110' target="_blank">
+	<img src="../../static/img/releases/110.jpg">
+	<div class="release-title">Натура</div>
+</a></div>`;
+
+
+tabPanels[5].innerHTML += `<div class="release"><a href='https://vk.com/music/playlist/-190544150_172' target="_blank">
+	<img src="../../static/img/releases/172.jpg">
+	<div class="release-title">SALTY THROUGH THE VEINS UNDER THE STARLIGHT</div>
+
+</a><div class="performer"><a href="../molochnik">Молочник Павел</a></div></div>`;
+
+
+tabPanels[5].innerHTML += `<div class="release"><a href='https://vk.com/music/playlist/-190544150_146' target="_blank">
+	<img src="../../static/img/releases/146.jpg">
+	<div class="release-title">SALTY THROUGH THE VEINS</div>
+
+</a><div class="performer"><a href="../molochnik">Молочник Павел</a></div></div>`;
+
+
+</script>
+</html>
