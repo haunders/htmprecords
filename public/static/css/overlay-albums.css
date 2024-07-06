@@ -172,6 +172,7 @@
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
+	margin: 0;
 }
 .album-desc .date {
 	margin: 15px 0 0 0;
