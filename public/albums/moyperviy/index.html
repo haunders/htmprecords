@@ -2,33 +2,14 @@
 
 
 
-
 <html>
 	<head>
 		<meta charset="utf=8">
 		<title>Мой Первый Альбом</title>
 		<link rel="stylesheet" href="../../static/css/overlay-albums.css" type="text/css">
 		<link rel="shortcut icon" href="../../static/img/favicon.png" type="image/x-icon">
-		<link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 	</head>
-	<body>
-		<div class="music_player">
-			<div class="album-art"><img src="../../static/img/releases/0.jpg" class="mini-cover"></div>
-			<div class="track-title">
-				<p class="track-title-nowplaying"></p>
-				<p class="track-performer-nowplaying"></p>
-				<div id="audiowrap">
-					<div id="audio0">
-						<audio id="audio1" preload controls>Прослушивание на данном устройстве временно недоступно</audio>
-					</div>
-				</div>
-			</div>
-			<div id="tracks" class="bottom-btn">
-				<button class="prev_track" id="btnPrev"></button>
-				<button class="next_track" id="btnNext"></button>
-			</div>
-		</div>
-		<div class="album_body">
+	<body id="album_body">
 			<div class="album-title">
 				<div class="cover-art">
 				
@@ -38,12 +19,167 @@
 					<p class="title" id="album_name">Мой Первый Альбом</p>
 					<p class="artist"><a href="../../artists/larochka" class="artist">Ларочка Звёздная</a></p>
 					<p class="date">04.08.2019</p>
-					<div class="listen-buttons"><button class="listen"></button><button class="telegram" onclick="window.open('https://t.me/htmpstorage/3')"></button></div>
+					
+					<div><button class="listen" onclick="window.open('https://t.me/htmpstorage/3')"></button></div>
+					
 				</div>
 			</div>
 			<div class="tracklist">
 				
-				<table cellpadding="3" id="trcklst">
+				<table cellpadding="3">
+					
+					<tr class="track-album" >
+						<td>1</td>
+						<td class="track_info">
+							<p>Картошечка </p>
+							<p class="track-performer">
+								
+								Ларочка Звёздная
+								
+							</p>
+						</td>
+						<td class="track_duration">
+							<div class="last">
+								<div class="explicit"></div>
+								
+								<div class="duration">1:08</div>
+							</div>
+						</td>
+					</tr>
+					
+					<tr class="track-album" >
+						<td>2</td>
+						<td class="track_info">
+							<p>Маленькая девочка </p>
+							<p class="track-performer">
+								
+								Ларочка Звёздная
+								
+							</p>
+						</td>
+						<td class="track_duration">
+							<div class="last">
+								<div class="explicit"></div>
+								
+								<div class="duration">1:09</div>
+							</div>
+						</td>
+					</tr>
+					
+					<tr class="track-album" >
+						<td>3</td>
+						<td class="track_info">
+							<p>Мамонт </p>
+							<p class="track-performer">
+								
+								Ларочка Звёздная ft. Лида Мамбетова
+								
+							</p>
+						</td>
+						<td class="track_duration">
+							<div class="last">
+								<div class="explicit"></div>
+								
+								<div class="duration">0:59</div>
+							</div>
+						</td>
+					</tr>
+					
+					<tr class="track-album" >
+						<td>4</td>
+						<td class="track_info">
+							<p>Нижний секс </p>
+							<p class="track-performer">
+								
+								Ларочка Звёздная ft. Лида Мамбетова, ABDC, koresh55
+								
+							</p>
+						</td>
+						<td class="track_duration">
+							<div class="last">
+								<div class="explicit"></div>
+								
+								<div class="duration">2:03</div>
+							</div>
+						</td>
+					</tr>
+					
+					<tr class="track-album" >
+						<td>5</td>
+						<td class="track_info">
+							<p>Гом </p>
+							<p class="track-performer">
+								
+								Ларочка Звёздная
+								
+							</p>
+						</td>
+						<td class="track_duration">
+							<div class="last">
+								<div class="explicit"></div>
+								
+								<div class="duration">1:10</div>
+							</div>
+						</td>
+					</tr>
+					
+					<tr class="track-album" >
+						<td>6</td>
+						<td class="track_info">
+							<p>Волосатые ноги </p>
+							<p class="track-performer">
+								
+								Ларочка Звёздная
+								
+							</p>
+						</td>
+						<td class="track_duration">
+							<div class="last">
+								<div class="explicit"></div>
+								
+								<div class="duration">2:51</div>
+							</div>
+						</td>
+					</tr>
+					
+					<tr class="track-album" >
+						<td>7</td>
+						<td class="track_info">
+							<p>Honor </p>
+							<p class="track-performer">
+								
+								Ларочка Звёздная ft. KARAVAXXXA
+								
+							</p>
+						</td>
+						<td class="track_duration">
+							<div class="last">
+								<div class="explicit"></div>
+								
+								<div class="duration">1:04</div>
+							</div>
+						</td>
+					</tr>
+					
+					<tr class="track-album" >
+						<td>8</td>
+						<td class="track_info">
+							<p>Девочки </p>
+							<p class="track-performer">
+								
+								Ларочка Звёздная
+								
+							</p>
+						</td>
+						<td class="track_duration">
+							<div class="last">
+								<div class="explicit"></div>
+								
+								<div class="duration">2:03</div>
+							</div>
+						</td>
+					</tr>
+					
 				</table>
 				
 				<p class="info">
@@ -101,263 +237,7 @@
 				</div>
 			</div>
 			
-		</div>
 	</body>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 	<script src="../../static/js/zooming.min.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			new Zooming({
-				bgColor: "#000",
-				bgOpacity: 0.9,
-				enableGrab: false,
-			}).listen('.cover')
-		})
-		
-		jQuery(function ($) {
-			$('.music_player').hide(0);
-			'use strict'
-			var supportsAudio = !!document.createElement('audio').canPlayType;
-			if (supportsAudio) {
-				// initialize plyr
-				var player = new Plyr('#audio1', {
-					controls: [
-						'play',
-						'progress',
-						'current-time',
-						'duration',
-						'mute',
-						'volume'
-					]
-				});
-				// initialize playlist and controls
-				var index = -1,
-					playing = false,
-					mediaPath = '/',
-					tracks = [
-					
-					
-					{
-						"track": 1,
-						"name": "Картошечка",
-						"alt": "None",
-						"performer": "Ларочка Звёздная",
-						"duration": "1:08",
-						"explicit": true,
-						"release_id": "131",
-						"file": "None"
-					},
-					
-					{
-						"track": 2,
-						"name": "Маленькая девочка",
-						"alt": "None",
-						"performer": "Ларочка Звёздная",
-						"duration": "1:09",
-						"explicit": true,
-						"release_id": "131",
-						"file": "None"
-					},
-					
-					{
-						"track": 3,
-						"name": "Мамонт",
-						"alt": "None",
-						"performer": "Ларочка Звёздная ft. Лида Мамбетова",
-						"duration": "0:59",
-						"explicit": true,
-						"release_id": "131",
-						"file": "None"
-					},
-					
-					{
-						"track": 4,
-						"name": "Нижний секс",
-						"alt": "None",
-						"performer": "Ларочка Звёздная ft. Лида Мамбетова, ABDC, koresh55",
-						"duration": "2:03",
-						"explicit": true,
-						"release_id": "131",
-						"file": "None"
-					},
-					
-					{
-						"track": 5,
-						"name": "Гом",
-						"alt": "None",
-						"performer": "Ларочка Звёздная",
-						"duration": "1:10",
-						"explicit": true,
-						"release_id": "131",
-						"file": "None"
-					},
-					
-					{
-						"track": 6,
-						"name": "Волосатые ноги",
-						"alt": "None",
-						"performer": "Ларочка Звёздная",
-						"duration": "2:51",
-						"explicit": true,
-						"release_id": "131",
-						"file": "None"
-					},
-					
-					{
-						"track": 7,
-						"name": "Honor",
-						"alt": "None",
-						"performer": "Ларочка Звёздная ft. KARAVAXXXA",
-						"duration": "1:04",
-						"explicit": true,
-						"release_id": "131",
-						"file": "None"
-					},
-					
-					{
-						"track": 8,
-						"name": "Девочки",
-						"alt": "None",
-						"performer": "Ларочка Звёздная",
-						"duration": "2:03",
-						"explicit": true,
-						"release_id": "131",
-						"file": "None"
-					},
-					
-					],
-					buildPlaylist = $.each(tracks, function(key, value) {
-						var trackNumber = value.track,
-							trackName = value.name,
-							trackAlt = value.alt,
-							trackPerformer = value.performer,
-							trackExplicit = value.explicit,
-							trackDuration = value.duration,
-							trackLink = value.file;
-							$('#trcklst').append(
-								( trackLink == "None" ?  '<tr class="track-album" id="inactive">' : '<tr class="track-album">' )
-								+ '<td>' + trackNumber + '</td> \
-								<td class="track_info"> \
-									<p>' + trackName
-									+ ( trackAlt !== "None" ?  '<span class="track-alt">[' + trackAlt + ']</span>' : '' )
-									+ '</p> \
-									<p class="track-performer">' + trackPerformer + '</p> \
-								</td> \
-								<td class="track_duration"> \
-									<div class="last">'
-								+ ( trackExplicit == true ?  '<div class="explicit"></div>' : '<div class="explicit-hidden"></div>' )
-								+ '<div class="duration">' + trackDuration + '</div> \
-									</div> \
-								</td> \
-							</tr>');
-					}),
-					available = tracks.filter(item => item.file !== "None"),
-					trackCount = tracks.length,
-					availableCount = available.length,
-					npAction = $('#npAction'),
-					npTitle = $('.track-title-nowplaying'),
-					npPerformer = $('.track-performer-nowplaying'),
-					audio = $('#audio1').on('play', function () {
-						playing = true;
-					}).on('pause', function () {
-						playing = false;
-					}).on('ended', function () {
-						var av_index = available.findIndex(p => p.track == index+1);
-						if ((av_index + 1) < availableCount) {
-							av_index++;
-							loadTrack(available[av_index].track-1);
-							audio.play();
-						} else {
-							$('.music_player').slideToggle(200, "swing");
-							$('.album_body').animate({'margin-top': '0'}, 200, 'swing');
-							audio.pause();
-							av_index = -1;
-							index = -1;
-							$('.plSel').removeClass('plSel');
-						}
-					}).get(0),
-					btnPrev = $('#btnPrev').on('click', function () {
-						if (availableCount > 0) {
-							var av_index = available.findIndex(p => p.track == index+1);
-							if ((av_index - 1) > -1) {
-								av_index--;
-								loadTrack(available[av_index].track-1);
-								if (playing || index == 0 || av_index == 0) {
-									audio.play();
-								}
-							} else {
-								$('.music_player').slideToggle(200, "swing");
-								$('.album_body').animate({'margin-top': '0'}, 200, 'swing');
-								audio.pause();
-								av_index = -1;
-								index = -1;
-								$('.plSel').removeClass('plSel');
-							}
-						}
-					}),
-					btnNext = $('#btnNext').on('click', function () {
-						if (availableCount > 0) {
-							var av_index = available.findIndex(p => p.track == index+1);
-							if ((av_index + 1) < availableCount) {
-								av_index++;
-								loadTrack(available[av_index].track-1);
-								if (playing || index == 0 || av_index == 0) {
-									audio.play();
-								}
-							} else {
-								$('.music_player').slideToggle(200, "swing");
-								$('.album_body').animate({'margin-top': '0'}, 200, 'swing');
-								audio.pause();
-								av_index = -1;
-								index = -1;
-								$('.plSel').removeClass('plSel');
-							}
-						}
-					}),
-					btnStart = $('.listen').on('click', function () {
-						playTrack(available[0].track-1);
-					}),
-					li = $('#trcklst tr').on('click', function () {
-						var id = parseInt($(this).index());
-						if (id !== index && tracks[id].file !== "None") {
-							playTrack(id);
-						}
-					}),
-					loadTrack = function (id) {
-						if (tracks[id].file !== "None") {
-							$('.plSel').removeClass('plSel');
-							$('#trcklst tr:eq(' + id + ')').addClass('plSel');
-							if ($('.music_player').is(":hidden")) {
-								$('.music_player').slideToggle(200, "swing");
-								$('.album_body').animate({'margin-top': '95'}, 200, 'swing');
-							}
-							npTitle.text(tracks[id].name);
-							npPerformer.text(tracks[id].performer);
-							$('.mini-cover').attr("src", "../../static/img/albums/moyperviy.png");
-							index = id;
-							audio.src = mediaPath + tracks[id].file;
-							updateDownload(id, audio.src);
-						}
-					},
-					updateDownload = function (id, source) {
-						player.on('loadedmetadata', function () {
-							$('a[data-plyr="download"]').attr('href', source);
-						});
-					},
-					playTrack = function (id) {
-						loadTrack(id);
-						audio.play();
-					};
-					if (availableCount < 1) {
-						btnStart.remove();
-					};
-			} else {
-				// no audio support
-				$('.column').addClass('hidden');
-				var noSupport = $('#audio1').text();
-				$('.container').append('<p class="no-support">' + noSupport + '</p>');
-			}
-		});
-	</script>
+	<script src="../../static/js/overlay-albums.js"></script>
 </html>
